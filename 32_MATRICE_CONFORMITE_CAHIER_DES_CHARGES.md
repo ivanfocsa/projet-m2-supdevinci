@@ -6,8 +6,8 @@ Ce document relie les exigences du cadre pedagogique et du cahier des charges au
 
 ## Synthese
 
-- Exigences suivies : 17.
-- Exigences OK : 16.
+- Exigences suivies : 18.
+- Exigences OK : 17.
 - Exigences a finaliser : 1.
 - Point reel restant : lien/MP4 video final.
 
@@ -32,3 +32,4 @@ Ce document relie les exigences du cadre pedagogique et du cahier des charges au
 | SOC-11 | Cahier des charges | Simulation d'un ou plusieurs sites clients avec VMs ou conteneurs | Mahamadou DIACOUMBA | OK | `Config_Lab/daylight_vm_inventory.csv; Config_Lab/daylight_lab_runbook.csv; 22_EXPLOITATION_VM_RUNBOOK_REX.md` | Inventaire et runbook VM/conteneurs fournis. |
 | SOC-12 | Cahier des charges | Generation de logs realistes attaque et safe | Mahamadou DIACOUMBA | OK | `tools/generate_demo_logs.py; Demo_Logs/; tools/send_demo_logs_to_syslog.py; Annexes_Captures/CAP-27_rejeu-logs-dry-run.png` | Logs pfSense, application, AD/fichiers, mail et endpoint generes. |
 | SOC-13 | Cahier des charges | Templates de deploiement client et solution industrialisable | Yvan FOCSA | OK | `02_GUIDE_DEPLOIEMENT_UTILISATION.md; Config_PfSense/README_IMPORT_PFSENSE_DAYLIGHT.md; Config_PfSense/pfsense_demo_test_plan.csv` | Guide, imports pfSense, configs Wazuh et trajectoire cible documentes. |
+| SOC-14 | Cahier des charges | CLI ou API exposee si automatisation prevue | Youssef GUERNIOU / Mahamadou DIACOUMBA | OK | `tools/preflight_demo.ps1; tools/send_demo_logs_to_syslog.py; Youssef GUERNIOU/setup-siem-lab.ps1; Wazuh API https://localhost:55000` | Exigence optionnelle couverte par scripts CLI et API native Wazuh ; aucune API custom n'est necessaire pour le MVP. |

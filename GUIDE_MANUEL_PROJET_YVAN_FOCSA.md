@@ -99,6 +99,31 @@ Phrase a dire :
 
 > Dans le lab, nous presentons des zones logiques et des flux documentes. En production, ces zones seraient portees par des VLAN ou des interfaces dediees pfSense, avec des regles journalisees et une supervision complete.
 
+## 4bis. Verification rapide du cahier des charges
+
+| Exigence du cahier des charges | Statut | Preuve / explication |
+|---|---|---|
+| SOC externalise centralisant les evenements | OK | Wazuh centralise agents, syslog et logs rejoues. |
+| Environnement de demonstration operationnel | OK | Docker Wazuh, `serveur-01`, preflight OK. |
+| Systeme industrialisable | OK pour dossier | Architecture cible, guide de deploiement, pfSense, trajectoire production. |
+| Collecte multi-source agents, syslog, API | OK / partiel assumé | Agents + syslog couverts. API native Wazuh disponible, pas d'API custom car optionnelle. |
+| SIEM open-source centralise | OK | Wazuh. |
+| Regles de detection personnalisables | OK | Regles `100xxx`, `110xxx`, SSH Wazuh. |
+| Dashboards lisibles et segmentes | OK | Dashboard technique, dashboard executif, dashboard offline. |
+| Playbooks de reponse semi-automatises | OK | Playbooks et procedures ; semi-automatisation via scripts de relance/rejeu logs. |
+| Reporting simple et exportable | OK | PDF, DOCX, dashboards HTML, manifeste, captures. |
+| Interface web accessible | OK | Wazuh Dashboard sur `https://localhost/`. |
+| Roles supervision / analyste / admin | OK | Comptes `admin`, `analyste`, `supervision`, role `soc_readonly`. |
+| CLI ou API optionnelle | OK optionnel | Scripts PowerShell/Python + API Wazuh native `https://localhost:55000`. |
+| Simulation sites clients VMs ou conteneurs | OK | Conteneurs Docker acceptables, notamment `serveur-01` et Wazuh. |
+| Logs realistes attaque/safe | OK | `Demo_Logs/` et `tools/generate_demo_logs.py`. |
+| Templates de deploiement client | OK | Config pfSense, rules Wazuh, guides de deploiement. |
+| Video de demonstration | A faire | Script et plan prets ; il reste a enregistrer et ajouter le lien/MP4. |
+
+Phrase importante :
+
+> L'API/CLI etait optionnelle dans le cahier des charges. Nous n'avons pas developpe une API custom inutile ; nous utilisons les scripts du projet et l'API native Wazuh pour l'automatisation du MVP.
+
 ## 5. Partie Yvan FOCSA - objectif
 
 Ton objectif est de montrer que Cyber Trust ne fait pas seulement de la detection apres incident. Tu dois montrer que la securite est pensee **des l'architecture**.
