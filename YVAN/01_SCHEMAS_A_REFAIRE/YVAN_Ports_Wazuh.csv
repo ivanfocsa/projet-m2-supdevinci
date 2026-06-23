@@ -1,0 +1,7 @@
+Composant;Port;Protocole;Usage;Expose dans le lab
+Wazuh Manager;1514;TCP;Remontee des evenements agents;Oui
+Wazuh Manager;1515;TCP;Enrolement des agents;Oui
+Wazuh Manager;514;UDP;Collecte syslog firewall / reseau;Oui
+Wazuh API;55000;TCP;API Wazuh;Oui
+Wazuh Dashboard;443;TCP;Interface web SIEM;Oui
+Wazuh Indexer;9200;TCP;Recherche et stockage index;Oui

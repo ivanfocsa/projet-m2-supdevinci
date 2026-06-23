@@ -1,0 +1,7 @@
+Zone;CIDR;Role;Equipements / IP;Justification
+USERS;10.10.10.0/24;Postes audioprothesistes Daylight;Postes utilisateurs;Zone utilisateur separee des serveurs et du SOC
+SERVERS;10.10.20.0/24;Serveurs internes Daylight;AD_SERVER 10.10.20.10, FILE_SERVER 10.10.20.20, DAYLIGHT_DB 10.10.20.30;Zone sensible protegee contre le mouvement lateral
+DMZ;10.10.30.0/24;Application metier exposee controlee;DAYLIGHT_APP 10.10.30.20;Publication applicative sans exposer directement les serveurs internes
+ADMIN_MGMT;10.10.40.0/24;Administration et management;pfSense LAN 10.10.40.1, poste admin 10.10.40.2;Acces d'administration limite et journalise
+SOC;10.10.50.0/24;SOC externalise Cyber Trust;SOC_WAZUH 10.10.50.10, SOC_DASHBOARD 10.10.50.11;Collecte, analyse et supervision des evenements de securite
+WAN_LAB;192.168.5.0/24;Sortie VMware NAT;pfSense WAN 192.168.5.128, passerelle 192.168.5.1;Acces externe du lab et preuve de blocage WAN

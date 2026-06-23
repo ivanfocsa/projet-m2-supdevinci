@@ -1,0 +1,11 @@
+Source;Destination;Protocole / Port;Action pfSense;Objectif;Preuve
+LAN subnets;DNS_ALLOWED;TCP/UDP 53;Pass;Autoriser la resolution DNS controlee;Regle LAN Allow DNS users
+LAN subnets;DAYLIGHT_APP;TCP 443;Pass;Autoriser l'acces HTTPS a l'application metier Daylight;Regle LAN Allow Daylight app HTTPS
+LAN subnets;SERVERS_SUBNET;TCP any;Block;Bloquer le mouvement lateral direct vers les serveurs;Regle LAN Block lateral movement
+LAN subnets;ADMIN_SUBNET;IPv4 any;Block + log;Bloquer les utilisateurs vers la zone administration;Regle LAN Block users to admin zone + logs firewall
+LAN subnets;SOC_SUBNET;IPv4 any;Block + log;Eviter l'acces direct des utilisateurs au SOC;Regle LAN Block direct users to SOC
+LAN subnets;Internet;TCP 80-443;Pass;Autoriser uniquement la navigation web standard;Regle LAN Allow web browsing
+WAN;Interne Daylight;Any;Block par defaut;Aucune exposition entrante depuis WAN;Onglet WAN sans regle pass + default deny
+pfSense;SOC_WAZUH;UDP 514;Envoi syslog;Centraliser les logs firewall dans Wazuh;Capture Syslog Wazuh
+Agents Wazuh;Wazuh Manager;TCP 1514 / TCP 1515;Autorise cote architecture;Remontee evenements et enrollement agents;Table ports Wazuh
+Admin SOC;Wazuh Dashboard;TCP 443;Autorise cote architecture;Acces web supervision analyste / admin;Dashboard Wazuh
