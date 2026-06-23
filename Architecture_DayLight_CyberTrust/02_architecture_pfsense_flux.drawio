@@ -1,0 +1,27 @@
+<mxfile host="app.diagrams.net" modified="2026-06-23T00:00:00.000Z" agent="Codex" version="24.7.17">
+  <diagram id="pfSense flux" name="pfSense flux">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="2" value="pfSense fw 01
+Interfaces WAN USERS SERVERS DMZ MGMT SOC
+Default deny + logs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1"><mxGeometry x="610" y="350" width="270" height="110" as="geometry"/></mxCell><mxCell id="3" value="WAN
+Block RFC1918
+Blocklist demo
+NAT 443 vers Daylight app" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1"><mxGeometry x="610" y="80" width="270" height="100" as="geometry"/></mxCell><mxCell id="4" value="USERS
+10.10.10.0/24
+Autorise app 443
+Bloque MGMT SERVERS SOC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1"><mxGeometry x="100" y="260" width="320" height="130" as="geometry"/></mxCell><mxCell id="5" value="DMZ
+10.10.30.0/24
+App vers DB 5432
+Logs vers Wazuh 1514" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1"><mxGeometry x="100" y="560" width="320" height="130" as="geometry"/></mxCell><mxCell id="6" value="SERVERS
+10.10.20.0/24
+Agents Wazuh 1514 1515
+Syslog 514" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1"><mxGeometry x="1030" y="260" width="330" height="130" as="geometry"/></mxCell><mxCell id="7" value="SOC Wazuh
+10.10.50.10
+Manager Indexer Dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1"><mxGeometry x="1030" y="560" width="330" height="130" as="geometry"/></mxCell><mxCell id="8" value="MGMT
+10.10.40.0/24
+Admin pfSense Wazuh serveurs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1"><mxGeometry x="610" y="720" width="310" height="100" as="geometry"/></mxCell><mxCell id="9" value="HTTPS 443 NAT
+OpenVPN 1194" style="endArrow=block;html=1;rounded=0;strokeColor=#2E7D32;fontColor=#2E7D32;strokeWidth=2" edge="1" parent="1" source="3" target="2"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="10" value="Tout autre entrant bloque" style="endArrow=block;html=1;rounded=0;strokeColor=#C00000;fontColor=#C00000;dashed=1;strokeWidth=2" edge="1" parent="1" source="3" target="2"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="11" value="DNS 53 / Web 80 443 / App 443" style="endArrow=block;html=1;rounded=0;strokeColor=#2E7D32;fontColor=#2E7D32;strokeWidth=2" edge="1" parent="1" source="4" target="2"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="12" value="Vers MGMT SERVERS SOC bloque" style="endArrow=block;html=1;rounded=0;strokeColor=#C00000;fontColor=#C00000;dashed=1;strokeWidth=2" edge="1" parent="1" source="4" target="2"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="13" value="App vers DB 5432" style="endArrow=block;html=1;rounded=0;strokeColor=#2E7D32;fontColor=#2E7D32;strokeWidth=2" edge="1" parent="1" source="5" target="2"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="14" value="DMZ vers LAN/MGMT bloque" style="endArrow=block;html=1;rounded=0;strokeColor=#C00000;fontColor=#C00000;dashed=1;strokeWidth=2" edge="1" parent="1" source="5" target="2"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="15" value="Agents et syslog vers SOC" style="endArrow=block;html=1;rounded=0;strokeColor=#2E7D32;fontColor=#2E7D32;strokeWidth=2" edge="1" parent="1" source="6" target="2"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="16" value="Admin 443 22 3389 5985 5986" style="endArrow=block;html=1;rounded=0;strokeColor=#2E7D32;fontColor=#2E7D32;strokeWidth=2" edge="1" parent="1" source="8" target="2"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="17" value="Remote logging UDP 514
+filterlog vers Wazuh" style="endArrow=block;html=1;rounded=0;strokeColor=#6A1B9A;fontColor=#6A1B9A;strokeWidth=2" edge="1" parent="1" source="2" target="7"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="18" value="Regles Wazuh 110010 110020 110050" style="endArrow=block;html=1;rounded=0;strokeColor=#6A1B9A;fontColor=#6A1B9A;strokeWidth=2" edge="1" parent="1" source="2" target="7"><mxGeometry relative="1" as="geometry"/></mxCell></root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
