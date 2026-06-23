@@ -7,71 +7,78 @@
 <group name="daylight,cybertrust,">
 
   <rule id="100110" level="10">
-    <decoded_as>syslog</decoded_as>
-    <regex>DAYLIGHT_APP.*event=auth_failure.*count=([5-9]|[1-9][0-9]+)</regex>
+    <match>DAYLIGHT_APP event=auth_failure</match>
     <description>Daylight - brute force applicatif detecte</description>
     <group>daylight_app,authentication,bruteforce,</group>
   </rule>
 
   <rule id="100120" level="12">
-    <decoded_as>syslog</decoded_as>
-    <regex>DAYLIGHT_APP.*event=patient_record_access.*risk=high</regex>
+    <match>DAYLIGHT_APP event=patient_record_access</match>
     <description>Daylight - acces anormal a un dossier patient</description>
     <group>daylight_app,gdpr,patient_data,</group>
   </rule>
 
   <rule id="100130" level="12">
-    <decoded_as>syslog</decoded_as>
-    <regex>DAYLIGHT_AD.*event=privileged_group_change</regex>
+    <match>DAYLIGHT_AD event=privileged_group_change</match>
     <description>Daylight - modification d'un groupe privilegie</description>
     <group>daylight_ad,privilege_escalation,</group>
   </rule>
 
   <rule id="100140" level="8">
-    <decoded_as>syslog</decoded_as>
-    <regex>DAYLIGHT_ENDPOINT.*event=usb_insert.*authorized=false</regex>
+    <match>DAYLIGHT_ENDPOINT event=usb_insert</match>
     <description>Daylight - support USB non autorise</description>
     <group>daylight_endpoint,device_control,</group>
   </rule>
 
   <rule id="100150" level="9">
-    <decoded_as>syslog</decoded_as>
-    <regex>DAYLIGHT_MAIL.*event=phishing_reported</regex>
+    <match>DAYLIGHT_MAIL event=phishing_reported</match>
     <description>Daylight - mail de phishing signale</description>
     <group>daylight_mail,phishing,</group>
   </rule>
 
   <rule id="110010" level="8">
-    <decoded_as>syslog</decoded_as>
-    <regex>filterlog:.*action=block.*interface=WAN</regex>
+    <if_sid>87700</if_sid>
+    <regex>action=block interface=WAN</regex>
     <description>pfSense - trafic entrant bloque sur WAN</description>
     <group>pfsense,firewall,wan,</group>
   </rule>
 
   <rule id="110020" level="10">
-    <decoded_as>syslog</decoded_as>
-    <regex>filterlog:.*action=block.*dst_zone=(SERVERS|MGMT|SOC)</regex>
-    <description>pfSense - tentative de mouvement lateral inter-VLAN</description>
+    <if_sid>87700</if_sid>
+    <match>dst_zone=MGMT</match>
+    <description>pfSense - tentative de mouvement lateral vers MGMT</description>
+    <group>pfsense,firewall,lateral_movement,</group>
+  </rule>
+
+  <rule id="110021" level="10">
+    <if_sid>87700</if_sid>
+    <match>dst_zone=SERVERS</match>
+    <description>pfSense - tentative de mouvement lateral vers SERVERS</description>
+    <group>pfsense,firewall,lateral_movement,</group>
+  </rule>
+
+  <rule id="110022" level="10">
+    <if_sid>87700</if_sid>
+    <match>dst_zone=SOC</match>
+    <description>pfSense - tentative de mouvement lateral vers SOC</description>
     <group>pfsense,firewall,lateral_movement,</group>
   </rule>
 
   <rule id="110030" level="6">
-    <decoded_as>syslog</decoded_as>
-    <regex>pfsense-fw-01.*event=admin_login</regex>
+    <match>pfsense-fw-01 event=admin_login</match>
     <description>pfSense - connexion d'administration</description>
     <group>pfsense,admin,</group>
   </rule>
 
   <rule id="110040" level="7">
-    <decoded_as>syslog</decoded_as>
-    <regex>pfsense-fw-01.*event=vpn_login</regex>
+    <match>pfsense-fw-01 event=vpn_login</match>
     <description>pfSense - connexion VPN admin</description>
     <group>pfsense,vpn,remote_access,</group>
   </rule>
 
   <rule id="110050" level="11">
-    <decoded_as>syslog</decoded_as>
-    <regex>filterlog:.*action=pass.*tag=WAN_EXFIL_DEMO</regex>
+    <if_sid>87700</if_sid>
+    <regex>action=pass.*tag=WAN_EXFIL_DEMO</regex>
     <description>pfSense - flux sortant suspect volumineux</description>
     <group>pfsense,exfiltration,</group>
   </rule>
