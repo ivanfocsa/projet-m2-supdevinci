@@ -1,0 +1,7 @@
+*
+!.gitignore
+!README.md
+!Rendu_Simple_5PDF/
+!Rendu_Simple_5PDF/*.pdf
+!PE_2526_M2CS_Daylight_CyberTrust_Rendu_5PDF.zip
+!PE_2526_M2CS_Daylight_CyberTrust_Rendu_5PDF.zip.sha256
