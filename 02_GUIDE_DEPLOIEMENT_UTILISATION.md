@@ -59,8 +59,8 @@ Le script realise :
 | Profil | Identifiant | Mot de passe | Usage |
 |---|---|---|---|
 | Admin | `admin` | `SecretPassword` | Administration complete. |
-| Analyste | `analyste` | `Analyste2026!SOC` | Lecture alertes et dashboards. |
-| Supervision | `supervision` | `Supervision2026!SOC` | Lecture reporting et vues de supervision. |
+| Analyste | `analyste` | `CTRead2026!Blue` | Lecture alertes et dashboards. |
+| Supervision | `supervision` | `CTView2026!Blue` | Lecture reporting et vues de supervision. |
 
 URL attendue :
 
@@ -82,10 +82,14 @@ Dans Wazuh Dashboard, verifier les agents et evenements suivants :
 
 ### Brute force SSH
 
-Le script declenche 15 tentatives SSH invalides contre `serveur-01`. L'alerte attendue est :
+Le script declenche des tentatives SSH invalides contre `serveur-01`. Les alertes constatees en live peuvent etre :
 
 ```text
-5712 - sshd: brute force
+5710 - sshd: tentative avec utilisateur inexistant
+5503 - PAM: echec de connexion
+5551 - PAM: multiples echecs sur une courte periode
+5763 - sshd: brute force
+5712 - sshd: brute force, selon version/correlation Wazuh
 ```
 
 Preuves a capturer :

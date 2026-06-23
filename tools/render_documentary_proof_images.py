@@ -214,7 +214,7 @@ def main() -> int:
             "Youssef GUERNIOU/setup-siem-lab.ps1",
             [
                 ("Configuration RBAC", rbac),
-                ("Compte attendu", "supervision / Supervision2026!SOC ; role soc_readonly ; acces lecture dashboards et alertes, sans administration."),
+                ("Compte attendu", "supervision / CTView2026!Blue ; role soc_readonly ; acces lecture dashboards et alertes, sans administration."),
             ],
             "#155eef",
         )

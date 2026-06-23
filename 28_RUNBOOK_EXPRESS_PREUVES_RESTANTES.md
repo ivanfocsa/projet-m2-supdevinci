@@ -52,7 +52,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 |---:|---|---|---|
 | 1 | `Annexes_Captures/CAP-01_wazuh-dashboard-login.png` | Youssef | `https://localhost`, session Wazuh connectee `admin / SecretPassword`. |
 | 2 | `Annexes_Captures/CAP-02_agents-poste01-serveur01.png` | Youssef | Wazuh > Agents, `poste-01` et `serveur-01` visibles/actifs. |
-| 3 | `Annexes_Captures/CAP-03_alerte-5712-brute-force-ssh.png` | Youssef | Security events, recherche `rule.id:5712`, detail d'alerte ouvert. |
+| 3 | `Annexes_Captures/CAP-03_alerte-5712-brute-force-ssh.png` | Youssef | Security events, recherche `agent.name: serveur-01 AND (rule.id:5710 OR rule.id:5503 OR rule.id:5551 OR rule.id:5763 OR rule.id:5712)`, detail d'alerte ouvert. |
 | 4 | `Annexes_Captures/CAP-25_preflight-demo-ok.png` | Mahamadou | Generee par `tools\repair_lab_and_capture_cap25.ps1` seulement si Docker + Wazuh OK. |
 
 Commande pour tenter la capture restante `CAP-25` apres preflight OK :

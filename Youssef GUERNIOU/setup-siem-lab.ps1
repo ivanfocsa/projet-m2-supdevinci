@@ -3,7 +3,8 @@
 # ---------------------------------------------------------------------
 #  Reproduit en UNE commande la partie SIEM du lab SOC :
 #    1. serveur-01  : conteneur Linux + agent Wazuh + SSH/rsyslog
-#                     + fix auth.log + test brute force (alerte 5712)
+#                     + fix auth.log + test SSH (alertes 5710/5503/5551/5763,
+#                       et 5712 selon version/correlation Wazuh)
 #    2. RBAC        : utilisateurs supervision / analyste + role
 #                     lecture seule "soc_readonly" + mapping
 #    3. (optionnel) : source applicative Daylight via les scripts npm
@@ -11,7 +12,7 @@
 #  PREREQUIS : Docker Desktop lance + lab Wazuh demarre
 #              (npm run lab:start). A lancer depuis la racine du projet.
 #
-#  USAGE :     .\scripts\setup-siem-lab.ps1
+#  USAGE :     .\Youssef GUERNIOU\setup-siem-lab.ps1
 # =====================================================================
 
 $ErrorActionPreference = "Stop"
@@ -53,9 +54,12 @@ NAME="serveur-01"
 echo "[*] Mise a jour des paquets..."
 apt-get update -qq
 
+echo "[*] Installation des prerequis systeme..."
+DEBIAN_FRONTEND=noninteractive apt-get install -y -qq wget ca-certificates gnupg openssh-server openssh-client rsyslog sshpass passwd
+
 echo "[*] Telechargement de l'agent Wazuh ${AGENT_VERSION}..."
 cd /tmp
-wget -q "https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/${DEB}"
+wget -q -O "${DEB}" "https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/${DEB}"
 
 echo "[*] Installation de l'agent (manager=${MANAGER})..."
 WAZUH_MANAGER="$MANAGER" WAZUH_AGENT_NAME="$NAME" dpkg -i "./${DEB}" || true
@@ -64,9 +68,12 @@ echo "[*] Resolution des dependances (python3, lsb-release)..."
 apt-get -y -qq --fix-broken install
 WAZUH_MANAGER="$MANAGER" WAZUH_AGENT_NAME="$NAME" dpkg --configure -a || true
 
-echo "[*] Installation de SSH et rsyslog..."
-DEBIAN_FRONTEND=noninteractive apt-get install -y -qq openssh-server openssh-client rsyslog sshpass
+echo "[*] Preparation SSH et utilisateur de test..."
 mkdir -p /run/sshd
+if ! id daylightadmin >/dev/null 2>&1; then
+  useradd -m -s /bin/bash daylightadmin
+  echo "daylightadmin:Daylight2026!" | chpasswd
+fi
 
 echo "[*] Ajout du suivi de /var/log/auth.log (si absent)..."
 if ! grep -q "/var/log/auth.log" /var/ossec/etc/ossec.conf; then
@@ -89,12 +96,16 @@ service ssh start
 /var/ossec/bin/wazuh-control restart
 sleep 5
 
-echo "[*] Simulation brute force SSH (15 tentatives)..."
-for i in $(seq 1 15); do
+echo "[*] Simulation SSH : utilisateur inexistant + mauvais mot de passe..."
+for i in $(seq 1 8); do
   sshpass -p wrong ssh -o StrictHostKeyChecking=no -o ConnectTimeout=3 hacker@localhost true 2>/dev/null || true
 done
+for i in $(seq 1 8); do
+  sshpass -p wrong ssh -o StrictHostKeyChecking=no -o ConnectTimeout=3 daylightadmin@localhost true 2>/dev/null || true
+done
 NB=$(grep -c "Failed password" /var/log/auth.log 2>/dev/null || echo 0)
-echo "[OK] $NB echecs d'authentification ecrits dans auth.log -> alerte Wazuh 5712 attendue."
+echo "[OK] $NB echecs d'authentification ecrits dans auth.log."
+echo "[OK] Alertes Wazuh attendues : 5710 utilisateur inexistant, 5503 echec PAM, 5551/5763 brute force, 5712 possible selon version."
 '@
 
 $serverBash = $serverBash -replace "`r`n", "`n"
@@ -116,12 +127,12 @@ AUTH="admin:SecretPassword"
 echo "[*] Utilisateur supervision..."
 curl -k -s -u "$AUTH" -X PUT "$IDX/_plugins/_security/api/internalusers/supervision" \
   -H 'Content-Type: application/json' \
-  -d '{"password":"Supervision2026!SOC"}'; echo
+  -d '{"password":"CTView2026!Blue"}'; echo
 
 echo "[*] Utilisateur analyste..."
 curl -k -s -u "$AUTH" -X PUT "$IDX/_plugins/_security/api/internalusers/analyste" \
   -H 'Content-Type: application/json' \
-  -d '{"password":"Analyste2026!SOC"}'; echo
+  -d '{"password":"CTRead2026!Blue"}'; echo
 
 echo "[*] Role lecture seule soc_readonly..."
 curl -k -s -u "$AUTH" -X PUT "$IDX/_plugins/_security/api/roles/soc_readonly" \
@@ -163,5 +174,5 @@ if (Test-Path ".\package.json") {
 # ---------------------------------------------------------------------
 Write-Host "`n=== TERMINE ===" -ForegroundColor Cyan
 Write-Host "Dashboard : https://localhost   (admin / SecretPassword)" -ForegroundColor Cyan
-Write-Host "Comptes RBAC : analyste / Analyste2026!SOC   -   supervision / Supervision2026!SOC" -ForegroundColor Cyan
-Write-Host "Verifie : Agents (poste-01, serveur-01 Active) + alertes 5712 et 100120." -ForegroundColor Cyan
+Write-Host "Comptes RBAC : analyste / CTRead2026!Blue   -   supervision / CTView2026!Blue" -ForegroundColor Cyan
+Write-Host "Verifie : Agents (poste-01, serveur-01 Active) + alertes SSH 5710/5503/5551/5763 et 100120." -ForegroundColor Cyan

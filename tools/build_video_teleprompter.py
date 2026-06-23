@@ -19,7 +19,7 @@ PROMPTS = {
     "01:30": "La solution repose sur Wazuh pour la supervision et pfSense pour la segmentation. Le demonstrateur couvre un endpoint, un serveur Linux simule, des logs applicatifs Daylight et une trajectoire cible multi-site.",
     "02:30": "Ici nous montrons la revue pfSense : interfaces, aliases, flux autorises, flux bloques, NAT, plan de tests et envoi syslog vers Wazuh. C'est la partie concrete firewall/routeur demandee par le cahier des charges.",
     "04:00": "Je presente la partie SIEM. Wazuh est deploye en lab, les preuves montrent le dashboard et la collecte multi-source. Les captures viennent de la documentation SIEM et peuvent etre recapturees en live si le lab repond.",
-    "05:30": "Nous montrons maintenant les alertes : brute force SSH 5712, regles metier Daylight 100110 a 100140, et l'acces anormal aux dossiers patients 100120.",
+    "05:30": "Nous montrons maintenant les alertes SSH 5710, 5503, 5551 ou 5763, les regles metier Daylight 100110 a 100140, et l'acces anormal aux dossiers patients 100120.",
     "07:00": "Le RBAC separe les profils : admin complet, analyste et supervision en lecture. Le role soc_readonly evite qu'un profil de supervision modifie la plateforme.",
     "08:30": "Le dashboard technique sert aux analystes : severite, source, top regles et details de qualification. L'objectif est d'aller vite vers la bonne priorite.",
     "10:00": "La matrice de qualification associe chaque regle a une severite, un SLA de triage, des premieres verifications, une action immediate et une escalade.",

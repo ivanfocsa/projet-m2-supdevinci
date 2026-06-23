@@ -70,7 +70,7 @@ Write-Host "   Ouvrir https://localhost, se connecter admin / SecretPassword, ca
 Write-Host "2. CAP-02_agents-poste01-serveur01.png (deja extractible depuis le PDF SIEM, recapture live recommandee si possible)"
 Write-Host "   Wazuh > Agents, montrer poste-01 et serveur-01 actifs."
 Write-Host "3. CAP-03_alerte-5712-brute-force-ssh.png (deja extractible depuis le PDF SIEM, recapture live recommandee si possible)"
-Write-Host "   Wazuh > Security events, requete rule.id:5712, ouvrir le detail de l'alerte."
+Write-Host "   Wazuh > Security events, requete agent.name: serveur-01 AND (rule.id:5710 OR rule.id:5503 OR rule.id:5551 OR rule.id:5763 OR rule.id:5712), ouvrir le detail de l'alerte."
 Write-Host "4. CAP-25_preflight-demo-ok.png (preuve restante : uniquement si Docker + Wazuh repondent)"
 Write-Host "   Produit automatiquement par render_preflight_evidence.py seulement si Docker + Wazuh repondent."
 

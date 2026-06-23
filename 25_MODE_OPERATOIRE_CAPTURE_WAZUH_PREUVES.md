@@ -8,7 +8,7 @@ Ce document sert a produire ou regenerer les preuves prioritaires Wazuh/prefligh
 |---|---|---|
 | `CAP-01_wazuh-dashboard-login.png` | Youssef | Wazuh Dashboard accessible et connecte. |
 | `CAP-02_agents-poste01-serveur01.png` | Youssef | Agents `poste-01` et `serveur-01` visibles/actifs. |
-| `CAP-03_alerte-5712-brute-force-ssh.png` | Youssef | Alerte Wazuh `5712` brute force SSH ouverte en detail. |
+| `CAP-03_alerte-5712-brute-force-ssh.png` | Youssef | Alerte SSH Wazuh `5710`, `5503`, `5551` ou `5763` ouverte en detail. |
 | `CAP-25_preflight-demo-ok.png` | Mahamadou | Preflight apres relance lab : Docker et Wazuh OK. |
 
 Les fichiers associes sont :
@@ -96,24 +96,24 @@ Si `serveur-01` est absent, relancer :
 C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File ".\Youssef GUERNIOU\setup-siem-lab.ps1"
 ```
 
-## 5. CAP-03 - Alerte 5712 brute force SSH
+## 5. CAP-03 - Alerte SSH brute force
 
 1. Dans Wazuh, ouvrir les evenements de securite.
 2. Chercher :
 
 ```text
-rule.id:5712
+agent.name: serveur-01 AND (rule.id:5710 OR rule.id:5503 OR rule.id:5551 OR rule.id:5763 OR rule.id:5712)
 ```
 
-3. Ouvrir le detail d'une alerte `5712`.
-4. Montrer au minimum : regle `5712`, cible `serveur-01`, horodatage, source ou utilisateur.
+3. Ouvrir le detail d'une alerte SSH.
+4. Montrer au minimum : regle `5710`, `5503`, `5551` ou `5763`, cible `serveur-01`, horodatage, source ou utilisateur.
 5. Enregistrer dans :
 
 ```text
 Annexes_Captures/CAP-03_alerte-5712-brute-force-ssh.png
 ```
 
-Si aucune alerte n'apparait, relancer la simulation brute force via le script de Youssef, attendre 1 a 3 minutes, puis refaire la recherche.
+Si aucune alerte n'apparait, relancer la simulation SSH via le script de Youssef, attendre 1 a 3 minutes, puis refaire la recherche.
 
 ## 6. CAP-25 - Preflight demo OK
 

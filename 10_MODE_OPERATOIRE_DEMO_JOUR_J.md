@@ -79,7 +79,7 @@ Verifier :
 | Connexion admin | OK |
 | Agent `poste-01` | Visible |
 | Agent `serveur-01` | Visible |
-| Alertes SSH | Regle `5712` visible |
+| Alertes SSH | Regle `5710`, `5503`, `5551` ou `5763` visible |
 | Alertes Daylight | Regles `100110`, `100120`, `100130`, `100140` visibles |
 | Dashboard technique | Charge |
 | Dashboard executif | Charge |
@@ -136,7 +136,7 @@ Si la video doit etre plus courte, montrer absolument :
 1. contexte Daylight ;
 2. architecture Cyber Trust ;
 3. agents Wazuh ;
-4. alerte `5712` ;
+4. alerte SSH `5710`, `5503`, `5551` ou `5763` ;
 5. alerte `100120` ;
 6. dashboard technique ;
 7. dashboard executif ;

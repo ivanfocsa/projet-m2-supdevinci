@@ -1,6 +1,6 @@
 ﻿=== Preflight demo Daylight / Cyber Trust ===
 Racine projet : C:\Users\Ivan\Pictures\PROJET M2
-Date controle : 2026-06-23 19:41:42
+Date controle : 2026-06-23 21:06:17
 
 ## Fichiers projet
 [OK]   Presentation_Daylight_CyberTrust.pptx - present
@@ -66,12 +66,12 @@ Date controle : 2026-06-23 19:41:42
 [OK]   config\captures\daylight_remaining_priority_captures.csv - present
 
 ## Rendus
-[OK]   Rendus_PDF - 39 PDF detectes
+[OK]   Rendus_PDF - 40 PDF detectes
 [OK]   Archive ZIP - presente
 [OK]   Rendu_Final - present
 
 ## Captures et video
-[OK]   Captures CAP-*.png - 26 captures detectees
+[OK]   Captures CAP-*.png - 27 captures detectees
 [WARN] Lien video - lien YouTube non repertorie pas encore renseigne
 [OK]   Rapport video - rapport present
 ## Solutions concretes
@@ -92,11 +92,13 @@ Date controle : 2026-06-23 19:41:42
 ## Docker et conteneurs
 [OK]   Docker daemon - repond
 [OK]   Conteneurs Wazuh - 3 entree(s) detectee(s)
-[WARN] Conteneur serveur-01 - non detecte, lancer setup-siem-lab.ps1
+[OK]   Conteneur serveur-01 - detecte
 Conteneurs Wazuh detectes :
-  single-node-wazuh.dashboard-1|Up 4 minutes
-  single-node-wazuh.indexer-1|Up 4 minutes
-  single-node-wazuh.manager-1|Up 4 minutes
+  single-node-wazuh.dashboard-1|Up About an hour
+  single-node-wazuh.indexer-1|Up About an hour
+  single-node-wazuh.manager-1|Up About an hour
+Serveur simule :
+  serveur-01|Up 11 minutes
 
 ## Acces Wazuh Dashboard
 [OK]   https://localhost - repond avec statut 200 via Python TLS lab
