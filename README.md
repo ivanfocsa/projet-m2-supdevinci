@@ -22,7 +22,7 @@ Les dossiers generes en double comme `Rendus_PDF/`, `Rendus_HTML/` et `Rendu_Fin
 
 Le dossier principal a utiliser est `Rendu_Simple_5PDF/`.
 
-Il contient uniquement les 5 PDF demandes :
+Il contient les 5 PDF demandes et leurs versions modifiables en DOCX :
 
 - `00_PROJET_COMPLET_Daylight_CyberTrust.pdf`
 - `01_Yvan_FOCSA_Architecte_Solution_pfSense.pdf`
@@ -30,9 +30,10 @@ Il contient uniquement les 5 PDF demandes :
 - `03_Kilyan_FELIX_Detection_Dashboards_Qualification.pdf`
 - `04_Mahamadou_DIACOUMBA_Playbooks_VM_REX.pdf`
 
-Une archive prete a transmettre est aussi disponible :
+Archives pretes a transmettre :
 
 - `PE_2526_M2CS_Daylight_CyberTrust_Rendu_5PDF.zip`
+- `PE_2526_M2CS_Daylight_CyberTrust_Rendu_5DOCX.zip`
 
 ## Roles
 
