@@ -75,7 +75,7 @@ Cyber Trust peut ainsi fournir a Daylight une supervision externalisee, document
 | Playbook incident | Mahamadou | Deroulement PB-001 ou PB-002. |
 | Runbook VM et REX | Mahamadou | `22_EXPLOITATION_VM_RUNBOOK_REX.md` + CSV lab. |
 | Architecture | Yvan | Schema dans rapport ou slide. |
-| Matrice pfSense | Yvan | VLAN, regles firewall, syslog Wazuh. |
+| Matrice pfSense | Yvan | Zones reseau, regles firewall, NAT, syslog Wazuh. |
 
 ## Conseils de montage
 

@@ -106,7 +106,7 @@ Montrer le filtre SSH :
 Montrer le filtre pfSense :
 `rule.id:110010 OR rule.id:110020 OR pfsense-fw-01`
 
-> Pour pfSense, les logs arrivent en syslog. La regle `110010` correspond au trafic entrant bloque sur le WAN, et `110020` correspond a une tentative de mouvement inter-VLAN vers une zone sensible comme MGMT.
+> Pour pfSense, les logs arrivent en syslog. La regle `110010` correspond au trafic entrant bloque sur le WAN, et `110020` correspond a une tentative de mouvement inter-zones vers une zone sensible comme MGMT.
 
 Montrer ou expliquer RBAC.
 
@@ -124,7 +124,7 @@ Texte :
 
 > Ma partie consiste a transformer les alertes en information exploitable par un SOC. Une alerte seule ne suffit pas : il faut la qualifier, lui donner une priorite, un SLA de traitement et une procedure d'escalade.
 >
-> Nous avons donc construit une matrice de qualification. Par exemple, l'acces anormal a un dossier patient avec la regle `100120` est critique, car il touche des donnees sensibles et peut avoir un impact RGPD. Une brute force SSH est haute, car elle peut annoncer une tentative de compromission. Une tentative inter-VLAN pfSense `110020` est critique si elle vise MGMT ou SERVERS.
+> Nous avons donc construit une matrice de qualification. Par exemple, l'acces anormal a un dossier patient avec la regle `100120` est critique, car il touche des donnees sensibles et peut avoir un impact RGPD. Une brute force SSH est haute, car elle peut annoncer une tentative de compromission. Une tentative inter-zones pfSense `110020` est critique si elle vise MGMT ou SERVERS.
 
 Montrer dashboard technique.
 
@@ -170,15 +170,17 @@ Ecran a montrer : rapport groupe, architecture cible, checklist finale.
 
 Texte Yvan :
 
-> Le demonstrateur montre que la solution fonctionne sur un lab. En production, nous ne garderions pas une architecture single-node simple. Nous separerions les composants Wazuh, avec un manager, un indexer, un dashboard, des sauvegardes, une retention adaptee et une supervision des composants.
+> Le demonstrateur montre que la solution fonctionne sur un lab. Dans le lab actuel, Wazuh tourne en single-node Docker avec trois conteneurs : Manager, Indexer et Dashboard. Ce n'est pas encore une architecture de production complete.
 >
-> Cote reseau, pfSense serait configure avec des VLAN ou interfaces dediees, des regles journalisees, du NAT controle, une administration isolee et des flux SOC explicites. L'objectif est de passer d'un lab demonstratif a une architecture exploitable chez un client.
+> En production, nous ne garderions pas ce format simplifie. Nous separerions les composants Wazuh, avec un manager, un indexer, un dashboard, des sauvegardes, une retention adaptee et une supervision des composants.
+>
+> Cote reseau, le lab presente surtout des zones logiques : USERS, SERVERS, DMZ, MGMT et SOC. En production, ces zones seraient portees par des VLAN ou par des interfaces dediees pfSense, avec des regles journalisees, du NAT controle, une administration isolee et des flux SOC explicites.
 >
 > La limite principale du projet est que tout n'est pas un environnement de production complet. En revanche, les elements essentiels sont presents : architecture, firewall, collecte, detection, dashboards, RBAC, playbooks et preuves.
 
 Texte equipe ou Kilyan :
 
-> Pour conclure, Cyber Trust propose a Daylight une solution de SOC externalise qui combine prevention et detection. pfSense segmente et bloque les flux dangereux. Wazuh collecte et detecte les evenements. Les dashboards permettent de suivre l'activite. Les playbooks permettent de reagir.
+> Pour conclure, Cyber Trust propose a Daylight une solution de SOC externalise qui combine prevention et detection. Dans le lab, pfSense est modelise par des zones, des regles et des logs syslog ; dans la cible, il porterait la segmentation reseau reelle. Wazuh collecte et detecte les evenements. Les dashboards permettent de suivre l'activite. Les playbooks permettent de reagir.
 >
 > Le projet est donc demonstrable, documente et extensible vers une version industrialisee pour plusieurs sites Daylight.
 

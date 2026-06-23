@@ -98,7 +98,7 @@ La separation cible permet d'ameliorer la disponibilite, la performance et la ma
 | Source endpoint | Agent Wazuh Windows `poste-01` | Surveillance poste, audit CIS Windows 11, evenements endpoint. |
 | Source serveur | Conteneur Ubuntu `serveur-01` | Simulation serveur interne, SSH, rsyslog, auth.log. |
 | Source metier | Logs Daylight | Demonstration des alertes propres au client : acces dossier patient, CRM, RDV. |
-| Firewall / routeur | pfSense | Segmentation VLAN, regles firewall, NAT, logs `filterlog` envoyes a Wazuh. |
+| Firewall / routeur | pfSense | Segmentation par zones reseau dans le lab, VLAN ou interfaces dediees en cible, regles firewall, NAT, logs `filterlog` envoyes a Wazuh. |
 | Acces | RBAC Wazuh | Segmentation supervision / analyste / admin. |
 | Procedures | Playbooks Cyber Trust | Qualification et reponse coherentes aux incidents. |
 
@@ -114,7 +114,7 @@ La detection repose sur les regles natives Wazuh et sur des regles adaptees aux 
 | `100130` - modification groupe privilegie | Daylight / annuaire | Critique | Reperer une elevation de privileges. |
 | `100140` - usage USB suspect | Endpoint | Moyenne a haute | Controler les supports amovibles sur poste. |
 | `110010` - flux WAN bloque | pfSense | Haute | Detecter scan ou tentative entrante bloquee par le firewall. |
-| `110020` - tentative inter-VLAN | pfSense | Critique | Reperer un mouvement lateral vers serveurs, SOC ou administration. |
+| `110020` - tentative inter-zones | pfSense | Critique | Reperer un mouvement lateral vers serveurs, SOC ou administration. |
 | SCA CIS Windows 11 | `poste-01` | Variable | Evaluer la posture de durcissement endpoint. |
 
 ## 7. Dashboards et reporting
