@@ -1,0 +1,8 @@
+Coller ici le lien YouTube non repertorie de la video groupe 15-20 minutes.
+
+Contraintes a verifier avant depot :
+- tous les membres parlent ;
+- le nom de la personne qui parle est affiche ;
+- la video suit la structure besoin -> solution -> demo ;
+- les alertes, dashboards, RBAC et playbooks sont montres ;
+- le lien est configure en mode non repertorie.

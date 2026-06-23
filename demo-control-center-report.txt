@@ -1,0 +1,9 @@
+=== Centre de controle demo Daylight / Cyber Trust ===
+Generation : 2026-06-23 19:59:16
+HTML : C:\Users\Ivan\Pictures\PROJET M2\Dashboards_Offline\daylight_demo_control_center.html
+Captures prioritaires : 8/8
+Video : WARN - Lien YouTube ou MP4 final absent
+Docker : [OK]   Docker daemon - repond
+Wazuh : [OK]   https://localhost - repond avec statut 200 via Python TLS lab
+
+Toutes les preuves prioritaires sont presentes.

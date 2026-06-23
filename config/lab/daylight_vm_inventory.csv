@@ -1,0 +1,7 @@
+name,type,network,ip_or_access,services,owner,proof
+wazuh-manager,Docker/VM,SOC,10.10.50.10 or https://localhost,"Wazuh manager; indexer; dashboard",Youssef,"Dashboard login; agents list"
+serveur-01,Docker container,SERVERS,10.10.20.20 or docker network,"SSH; rsyslog; auth.log",Mahamadou,"docker ps; Wazuh alert 5712"
+poste-01,Windows endpoint,USERS,DHCP or fixed,"Wazuh agent; SCA; endpoint events",Youssef,"Agents page; SCA screenshot"
+pfsense-fw-01,pfSense VM,MULTI-ZONE,10.10.10.1-10.10.50.1,"Firewall; NAT; syslog",Yvan/Mahamadou,"Rules page; remote logging"
+daylight-app-01,VM/container,DMZ,10.10.30.20,"HTTPS app; business logs",Kilyan/Youssef,"Daylight custom alerts"
+admin-01,Windows/Linux admin,MGMT,10.10.40.21,"Browser; admin tools",Mahamadou,"Access pfSense/Wazuh"

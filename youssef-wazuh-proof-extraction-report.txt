@@ -1,0 +1,14 @@
+=== Extraction preuves Wazuh depuis la documentation SIEM Youssef ===
+Source : C:\Users\Ivan\Pictures\PROJET M2\Youssef GUERNIOU\Documentation_SIEM_Youssef_GUERNIOU.pdf
+Destination : C:\Users\Ivan\Pictures\PROJET M2\Annexes_Captures
+
+[OK] CAP-01_wazuh-dashboard-login.png depuis wazuh_authenticated_dashboard
+[OK] CAP-03_alerte-5712-brute-force-ssh.png depuis ssh_5712
+[OK] CAP-04_source-endpoint-poste01-sca.png depuis endpoint_sca
+[OK] CAP-05_daylight-alertes-metier.png depuis daylight_custom_rules
+[OK] CAP-09_rbac-analyste-lecture-seule.png depuis rbac_admin_blocked
+[OK] CAP-16_auth-log-serveur01.png depuis serveur_ssh_events
+[OK] CAP-21_dashboard-technique-requetes.png depuis dashboard_tech_consolide
+[OK] CAP-22_dashboard-executif-daylight.png depuis dashboard_exec_sites
+[OK] CAP-02_agents-poste01-serveur01.png depuis endpoint, serveur et application
+[OK] Note de tracabilite : README_PREUVES_WAZUH_EXTRAITES.md

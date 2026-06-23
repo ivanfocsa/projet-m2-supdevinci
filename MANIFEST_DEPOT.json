@@ -1,0 +1,996 @@
+{
+  "project": "PE-2526 M2CS - Daylight / Cyber Trust",
+  "generated_at": "2026-06-23T20:00:15",
+  "status": "pret_structurellement_avec_preuves_reelles_restantes",
+  "summary": {
+    "pdf_count": 40,
+    "combined_pdf_pages": 93,
+    "cap_png_count": 27,
+    "required_capture_present": 8,
+    "required_capture_total": 8,
+    "video_ready": false,
+    "hashed_files": 186
+  },
+  "capture_status": {
+    "required_total": 8,
+    "required_present": 8,
+    "missing_required": [],
+    "present_files": [
+      "CAP-01_wazuh-dashboard-login.png",
+      "CAP-02_agents-poste01-serveur01.png",
+      "CAP-03_alerte-5712-brute-force-ssh.png",
+      "CAP-04_source-endpoint-poste01-sca.png",
+      "CAP-05_daylight-alertes-metier.png",
+      "CAP-06_alerte-100120-acces-patient.png",
+      "CAP-07_dashboard-technique.png",
+      "CAP-08_dashboard-executif.png",
+      "CAP-09_rbac-analyste-lecture-seule.png",
+      "CAP-10_playbook-brute-force.png",
+      "CAP-11_rex-incident-acces-patient.png",
+      "CAP-12_architecture-solution.png",
+      "CAP-13_pfsense-regles-firewall.png",
+      "CAP-14_pfsense-syslog-wazuh.png",
+      "CAP-15_script-setup-siem-lab.png",
+      "CAP-16_auth-log-serveur01.png",
+      "CAP-17_compte-supervision-dashboard.png",
+      "CAP-18_export-dashboard-report.png",
+      "CAP-19_wazuh-pfsense-alertes.png",
+      "CAP-20_wazuh-rejeu-logs-demo.png",
+      "CAP-21_dashboard-technique-requetes.png",
+      "CAP-22_dashboard-executif-daylight.png",
+      "CAP-23_qualification-alerte-100120.png",
+      "CAP-24_qualification-alerte-110020.png",
+      "CAP-25_preflight-demo-ok.png",
+      "CAP-27_rejeu-logs-dry-run.png",
+      "CAP-28_rex-incident-rempli.png"
+    ]
+  },
+  "video_status": {
+    "link_file": "PE_2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_video-lien.txt",
+    "has_youtube_link": false,
+    "mp4_files": [],
+    "ready": false
+  },
+  "blocking_before_official_deposit": [
+    {
+      "type": "video",
+      "detail": "Lien YouTube non repertorie ou MP4 final absent",
+      "items": [
+        "PE_2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_video-lien.txt"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "00_REGISTRE_EXIGENCES_ET_SYNTHESE.md",
+      "size_bytes": 5535,
+      "sha256": "d2fcf43624b17d222f7765cde16b99060040f510bcdbcb049a758e39fdf73f63"
+    },
+    {
+      "path": "01_RAPPORT_TECHNIQUE_GROUPE.md",
+      "size_bytes": 13397,
+      "sha256": "4551454851d1ac8319d1f5c5479dc4af5ba9301c45c350fd6999699b148fc8bf"
+    },
+    {
+      "path": "02_GUIDE_DEPLOIEMENT_UTILISATION.md",
+      "size_bytes": 5045,
+      "sha256": "acc1b6fa3d98e4df3a11ee861382dc8cb5b866847afe3aed41371fd1da9aa719"
+    },
+    {
+      "path": "03_PLAYBOOKS_PROCEDURES_REX.md",
+      "size_bytes": 8172,
+      "sha256": "f47a7e9f701417df21ba04ccbff5c8da47fb02ca66772631f0bf8ee73b3f36b0"
+    },
+    {
+      "path": "04_SCRIPT_VIDEO_DEMO.md",
+      "size_bytes": 6357,
+      "sha256": "89bbd25a57a9ce252c0a7ef0843e08e674ad5d4604b1a79c92f7103f2bb148bd"
+    },
+    {
+      "path": "05_BACKLOG_PLANNING.md",
+      "size_bytes": 3676,
+      "sha256": "65ee7babcca622a870f646af3c39767cb65d222bd5b7217aacbe5f027766b294"
+    },
+    {
+      "path": "06_SUPPORT_PRESENTATION.md",
+      "size_bytes": 5988,
+      "sha256": "0e35a1afe9199b6b0ede7e50b87e97ac81e4e8291f3fce4c230bcbccdb8ffeea"
+    },
+    {
+      "path": "07_DOSSIER_PREUVES_CAPTURES.md",
+      "size_bytes": 4022,
+      "sha256": "6821285eb43f40f8c8960feed2ca439cd25093b1c7589c5d49b25f510e2c697e"
+    },
+    {
+      "path": "08_AUDIT_FINAL_CONSIGNES.md",
+      "size_bytes": 4555,
+      "sha256": "7bb908cc078912f7b6d1dc16ed9a5bf77440bcee2271f8f0cb65eaeef59e363a"
+    },
+    {
+      "path": "09_NOTES_ORATEUR_SOUTENANCE.md",
+      "size_bytes": 5743,
+      "sha256": "517a70e4afaa8cf65fbcb3a79f354e6e73f399e6ec376324b0e308f8a5285141"
+    },
+    {
+      "path": "10_MODE_OPERATOIRE_DEMO_JOUR_J.md",
+      "size_bytes": 5621,
+      "sha256": "92164f3956617fdfe7cb066456b5fd0940cc4564334b4303eb6aaa4d8274d811"
+    },
+    {
+      "path": "11_CHECKLIST_DEPOT_FINAL.md",
+      "size_bytes": 3982,
+      "sha256": "1b434c3c03699d2ab9205e7e7021f1c855afecbad5e3b76c305217aac794b75a"
+    },
+    {
+      "path": "12_RISQUES_RGPD_CONFORMITE.md",
+      "size_bytes": 5076,
+      "sha256": "003ef680bf2743006ac6ea38472c1bc98e29f91bcfdc0b4ab7b0b958f9884f77"
+    },
+    {
+      "path": "13_PLAN_RECETTE_ACCEPTATION.md",
+      "size_bytes": 4232,
+      "sha256": "1a999c955ed642b8c2a599f313bbf9767d1ff6935b2901d8053bdf245da71539"
+    },
+    {
+      "path": "14_SYNTHESE_EXECUTIVE_CLIENT.md",
+      "size_bytes": 3505,
+      "sha256": "acb31ea0aad2cd532f68479d350b08b75a7f96e2176f6b03f3762950215c3c2a"
+    },
+    {
+      "path": "15_QA_SOUTENANCE_JURY_CLIENT.md",
+      "size_bytes": 6957,
+      "sha256": "09cc8cc64487eaa4c603358e4489feeb9fcc08da4dea786c198fae04bfda3701"
+    },
+    {
+      "path": "16_ANNEXE_CAPTURES_WAZUH.md",
+      "size_bytes": 13276,
+      "sha256": "b4ffe96187cfa1c802adcb6d535e69a9503c82f96f4b8c3bb31960aea9cfc270"
+    },
+    {
+      "path": "17_DOSSIER_GROUPE_COMPLET_INDEX.md",
+      "size_bytes": 3421,
+      "sha256": "7e71cb84448a3752274fe208488dbdd923317f355368e1617088a2418ebec4fe"
+    },
+    {
+      "path": "18_SOLUTIONS_CONCRETES_DEMO.md",
+      "size_bytes": 8388,
+      "sha256": "021b388457567065af4bb7cded099304c81cd430477ba3c697b9091ab06dc5c2"
+    },
+    {
+      "path": "19_ROLES_CONTRIBUTIONS_PREUVES.md",
+      "size_bytes": 5617,
+      "sha256": "953187b8cadb5c8bbc5228625eee0b0909d353143ced471b2f1d9e379d0b86f4"
+    },
+    {
+      "path": "20_MODE_OPERATOIRE_PFSENSE_WAZUH_LAB.md",
+      "size_bytes": 9351,
+      "sha256": "a868af05e7092ca224ca56e45d56d9ad432917961c6f2a3014277b565249bfb6"
+    },
+    {
+      "path": "21_DASHBOARDS_ALERTES_QUALIFICATION.md",
+      "size_bytes": 7266,
+      "sha256": "29688d81cf727cca9ae0e4e59e74c376785933d0f7b2faa92bbe80c807888850"
+    },
+    {
+      "path": "22_EXPLOITATION_VM_RUNBOOK_REX.md",
+      "size_bytes": 6987,
+      "sha256": "21d32afe8e1e2c3138189ee49a5a4714fb58655fc068990e0faf0cd45dcb101f"
+    },
+    {
+      "path": "23_PREUVES_FINALES_CAPTURES_VIDEO_DEPOT.md",
+      "size_bytes": 4678,
+      "sha256": "a1da2746cb9a4bd8170f71d8834990b6f2d53e7a5f2d11c0c5d922d728d390d9"
+    },
+    {
+      "path": "24_DASHBOARD_SOC_OFFLINE.md",
+      "size_bytes": 4072,
+      "sha256": "530971f1071aa327317b4b509f5ca79040e0afd9725f8d6e75c54e05d7989067"
+    },
+    {
+      "path": "25_MODE_OPERATOIRE_CAPTURE_WAZUH_PREUVES.md",
+      "size_bytes": 6427,
+      "sha256": "ce5cf2254c42cf1a5e51f70f52e94475e49b83fb09956f9f6c7643a891436b04"
+    },
+    {
+      "path": "26_MODE_OPERATOIRE_VIDEO_DEPOT.md",
+      "size_bytes": 5929,
+      "sha256": "7a945b8ca3ab9b8b530e261d9d95baced2136660ff2b131e420d03d227ce103d"
+    },
+    {
+      "path": "27_MANIFESTE_DEPOT_ET_INTEGRITE.md",
+      "size_bytes": 2824,
+      "sha256": "9202401578f08a14553035142a39c21ba8c2a9d8551b631b469286b8673b39e9"
+    },
+    {
+      "path": "28_RUNBOOK_EXPRESS_PREUVES_RESTANTES.md",
+      "size_bytes": 4919,
+      "sha256": "3bcbc64b6def4f55e9b0c1fde6b3e07f30c156ba8816cb52871149f3ac67de44"
+    },
+    {
+      "path": "29_IMPORT_PREUVES_FINALES.md",
+      "size_bytes": 3572,
+      "sha256": "6f65697904ecd2abe2de76137a5a4a247a03ce589c3d0b29bfed8c7b1b8dfc87"
+    },
+    {
+      "path": "30_TABLEAU_BORD_STATUT_FINAL.md",
+      "size_bytes": 1940,
+      "sha256": "cd0f2974b05e25cb4dbc21970fcebd3733a50e7c651403cbdcd96d99e211621d"
+    },
+    {
+      "path": "31_PACK_SOUTENANCE_JURY.md",
+      "size_bytes": 5984,
+      "sha256": "19c36205dbcd586c8a1752875380020c7ccd32e2a9b811e9f1829fe5f6a3141a"
+    },
+    {
+      "path": "32_MATRICE_CONFORMITE_CAHIER_DES_CHARGES.md",
+      "size_bytes": 5600,
+      "sha256": "090e175a2397e94487d575842564b0ce0311493487e6cbc8634c00d82ef45e62"
+    },
+    {
+      "path": "33_RUNBOOK_ENREGISTREMENT_VIDEO_IMMEDIAT.md",
+      "size_bytes": 6865,
+      "sha256": "b58fa03df2bf188142b1988d15cb2c343196ff4eed201bfb7daca02d7458ca31"
+    },
+    {
+      "path": "Annexes_Captures/CAP-01_wazuh-dashboard-login.png",
+      "size_bytes": 136975,
+      "sha256": "e3d05816d104d03781ec51736ce0c5da64a58fc8d115d5fcd2243b5207170c78"
+    },
+    {
+      "path": "Annexes_Captures/CAP-02_agents-poste01-serveur01.png",
+      "size_bytes": 1425404,
+      "sha256": "93b59069af7387f366d4650e63b11ffc66516510011bd809148555a4efbb38c4"
+    },
+    {
+      "path": "Annexes_Captures/CAP-03_alerte-5712-brute-force-ssh.png",
+      "size_bytes": 147644,
+      "sha256": "ba8264c55d126f2c2e606e19c86a432a41152a1416b44a4ecf9d93adbf9a4adf"
+    },
+    {
+      "path": "Annexes_Captures/CAP-04_source-endpoint-poste01-sca.png",
+      "size_bytes": 1101858,
+      "sha256": "0c259873c0d8ee86b61009c6e4c7db05b275cb5eb23c28ad5848ae714d34cc70"
+    },
+    {
+      "path": "Annexes_Captures/CAP-05_daylight-alertes-metier.png",
+      "size_bytes": 375382,
+      "sha256": "4addb200c1910939285882b9f031fb7fd45501222105df6c3519a0a060d3909a"
+    },
+    {
+      "path": "Annexes_Captures/CAP-06_alerte-100120-acces-patient.png",
+      "size_bytes": 88344,
+      "sha256": "ba7a55fc74ed3c6b7f3dcc5fe6b5bf95e287d71c325a9d6fd1e7dedc2b96d94d"
+    },
+    {
+      "path": "Annexes_Captures/CAP-07_dashboard-technique.png",
+      "size_bytes": 119427,
+      "sha256": "a4faa842771246eb5c50fd698068f5f43d4fe29a0bd7394734ab4067a048c8ae"
+    },
+    {
+      "path": "Annexes_Captures/CAP-08_dashboard-executif.png",
+      "size_bytes": 77219,
+      "sha256": "a97cf1771e4d1b6a58c660d66d17d138d5230280305d6d25d1d20067b29f7200"
+    },
+    {
+      "path": "Annexes_Captures/CAP-09_rbac-analyste-lecture-seule.png",
+      "size_bytes": 97403,
+      "sha256": "b2cbe0ad8f29d04172905bde467a0140a9db6e993e833b56dcc1b04ea8d42bb0"
+    },
+    {
+      "path": "Annexes_Captures/CAP-10_playbook-brute-force.png",
+      "size_bytes": 84942,
+      "sha256": "e8364ed5dba614ac99bd0964522eb302026b2c394d9b090abfe837978fa309a0"
+    },
+    {
+      "path": "Annexes_Captures/CAP-11_rex-incident-acces-patient.png",
+      "size_bytes": 63981,
+      "sha256": "d5117ec5a475ce8926b0a1dd5d90359de74755356bd84fb7b4bd579330b71cc8"
+    },
+    {
+      "path": "Annexes_Captures/CAP-12_architecture-solution.png",
+      "size_bytes": 124173,
+      "sha256": "06de8f8691ef734c9755aa6e961826c896d3d673db74103ca3aa51f63fe656f8"
+    },
+    {
+      "path": "Annexes_Captures/CAP-13_pfsense-regles-firewall.png",
+      "size_bytes": 184562,
+      "sha256": "7f4595db023517c43877634dc8243d5c40d160cea1090179f869fbe084d1e086"
+    },
+    {
+      "path": "Annexes_Captures/CAP-14_pfsense-syslog-wazuh.png",
+      "size_bytes": 79810,
+      "sha256": "fd5bf685e631ae4c09ab0ba7aa6c94856f11fc9c906430a240f25b0577bd6075"
+    },
+    {
+      "path": "Annexes_Captures/CAP-15_script-setup-siem-lab.png",
+      "size_bytes": 94786,
+      "sha256": "879026ae4222509494383e8171d62f035d7c589d78d82f52a45e03d6f693c754"
+    },
+    {
+      "path": "Annexes_Captures/CAP-16_auth-log-serveur01.png",
+      "size_bytes": 281069,
+      "sha256": "c94db878f14a373a64f91d24a17b040689b775ff33f7a4efb05849f6242cc2d6"
+    },
+    {
+      "path": "Annexes_Captures/CAP-17_compte-supervision-dashboard.png",
+      "size_bytes": 97891,
+      "sha256": "c18fae69d4e24d9e3b44ab48ea03b32098a6e7fa8e6f4f0cf77ded379c863729"
+    },
+    {
+      "path": "Annexes_Captures/CAP-18_export-dashboard-report.png",
+      "size_bytes": 88577,
+      "sha256": "dc83c77f7aee75b05301c14521a1935ccf736e9a7cc044b1d436ad6034cd3b5d"
+    },
+    {
+      "path": "Annexes_Captures/CAP-19_wazuh-pfsense-alertes.png",
+      "size_bytes": 139364,
+      "sha256": "542d046ad7c8f8488b87ef1681a24e8774a31f408019275f7e6c45382a626e87"
+    },
+    {
+      "path": "Annexes_Captures/CAP-20_wazuh-rejeu-logs-demo.png",
+      "size_bytes": 100894,
+      "sha256": "f01a25612826b11c3692789f6debafdaa76f14763722f4a5e9af1c9015b8ebb2"
+    },
+    {
+      "path": "Annexes_Captures/CAP-21_dashboard-technique-requetes.png",
+      "size_bytes": 210994,
+      "sha256": "c98013fe6411cdbd6a196af3ac390107f51725f820998f07ba081253640bf1f1"
+    },
+    {
+      "path": "Annexes_Captures/CAP-22_dashboard-executif-daylight.png",
+      "size_bytes": 184682,
+      "sha256": "5c059ec5b0e0d569e9e96c6653d4e15ef6dd2b319052e913fa1ce2e5716d5292"
+    },
+    {
+      "path": "Annexes_Captures/CAP-23_qualification-alerte-100120.png",
+      "size_bytes": 88344,
+      "sha256": "ba7a55fc74ed3c6b7f3dcc5fe6b5bf95e287d71c325a9d6fd1e7dedc2b96d94d"
+    },
+    {
+      "path": "Annexes_Captures/CAP-24_qualification-alerte-110020.png",
+      "size_bytes": 57831,
+      "sha256": "435300785b5b13b521d5ad2507c20103d11d49633da1a5d51d28cd2682076f54"
+    },
+    {
+      "path": "Annexes_Captures/CAP-25_preflight-demo-ok.png",
+      "size_bytes": 102097,
+      "sha256": "3e159d16e6f8c6e0f4323670402b6f6533cdd67053b0decf9b6c950cb6eb002b"
+    },
+    {
+      "path": "Annexes_Captures/CAP-27_rejeu-logs-dry-run.png",
+      "size_bytes": 109800,
+      "sha256": "9b084b6f2eb0d4dc80e11982df406f568aa35ef84bc1766d9f36f4318472d723"
+    },
+    {
+      "path": "Annexes_Captures/CAP-28_rex-incident-rempli.png",
+      "size_bytes": 74323,
+      "sha256": "5c97941eff078c229fbf30526a2749b3413f5a0a8258e1384ba571b0d25ef1c4"
+    },
+    {
+      "path": "Annexes_Captures/PRE-25_preflight-a-reprendre.png",
+      "size_bytes": 86349,
+      "sha256": "72311d8d10e6b05d18646a0f9d30f60a27c4730bc840e5ca02283c0f41cc8832"
+    },
+    {
+      "path": "config/captures/daylight_capture_checklist.csv",
+      "size_bytes": 2830,
+      "sha256": "61d2a058346aed0f55e3de9e4468516644593ad31a25506131628152ab609dbb"
+    },
+    {
+      "path": "config/captures/daylight_remaining_priority_captures.csv",
+      "size_bytes": 248,
+      "sha256": "f0551cfe67085d15a13d26a5552b1ae94e74cfa413748aeae2cd2f6716b5b935"
+    },
+    {
+      "path": "config/compliance/daylight_compliance_matrix.csv",
+      "size_bytes": 5151,
+      "sha256": "0217e3cf45c6145e36fe76399e018b963c7ec29f682515b3663e5f373f0bd008"
+    },
+    {
+      "path": "config/lab/daylight_lab_runbook.csv",
+      "size_bytes": 947,
+      "sha256": "6a7793d980f0930219d9ddf1e98856425e464b74ab7b6278e2bb27c83864b4b0"
+    },
+    {
+      "path": "config/lab/daylight_rex_scenarios.csv",
+      "size_bytes": 1217,
+      "sha256": "d1a38bd470e6f2c394ca19b165da944f8311784e7299e586fe0d2fae6dff9433"
+    },
+    {
+      "path": "config/lab/daylight_vm_inventory.csv",
+      "size_bytes": 779,
+      "sha256": "72962c89a382eae14bbcbc4c397d11aaf8dc6ef84eb9e5fac72d6f6c5c180907"
+    },
+    {
+      "path": "config/pfsense/pfsense_aliases.csv",
+      "size_bytes": 961,
+      "sha256": "2ab0c8711b58b2179f8e4a72388428edcdcada3c298121061fa2bfb9e7417331"
+    },
+    {
+      "path": "config/pfsense/pfsense_demo_test_plan.csv",
+      "size_bytes": 1881,
+      "sha256": "d5d72287e371d0cda35ad09df57f8c72616a908177042b9c00522e6a286b0736"
+    },
+    {
+      "path": "config/pfsense/pfsense_firewall_rules.csv",
+      "size_bytes": 2282,
+      "sha256": "3f470952c31ce58865e7b39da7390fe0b29b71377739b1a95442ba1d7dd5ab83"
+    },
+    {
+      "path": "config/pfsense/pfsense_lab_topology.csv",
+      "size_bytes": 845,
+      "sha256": "3ddf4523c66fa6ce861b6827a1e5f0b8ec758d8c4652fa791c6a256b0ca58584"
+    },
+    {
+      "path": "config/pfsense/pfsense_nat_port_forward.csv",
+      "size_bytes": 256,
+      "sha256": "a6e2bd50fd28bf57ed0ba9badbf55f4a988c7c179f31fb6f5d7054d1695bfb44"
+    },
+    {
+      "path": "config/pfsense/pfsense_syslog_wazuh.md",
+      "size_bytes": 1497,
+      "sha256": "1a2ba46b58b726e4bbbc21f9c12cf3a1f472b2a8d87681e9387e8d706ce14f81"
+    },
+    {
+      "path": "config/pfsense/README_IMPORT_PFSENSE_DAYLIGHT.md",
+      "size_bytes": 2403,
+      "sha256": "8b671af4051d3b4560918023c4c7a5cbe694d562c71a87eb711604f70b105b18"
+    },
+    {
+      "path": "config/pfsense/README_PFSENSE_DAYLIGHT.md",
+      "size_bytes": 1232,
+      "sha256": "c995acc5951092ee9d499878679b6876be9be8ee31a5736614ed3b8bf8688728"
+    },
+    {
+      "path": "config/video/daylight_jury_demo_path.csv",
+      "size_bytes": 1347,
+      "sha256": "3cd7c761ff9d67578328a537ff94069020435e8cfc47d4aaf577020520b2695b"
+    },
+    {
+      "path": "config/video/daylight_jury_response_cards.csv",
+      "size_bytes": 3310,
+      "sha256": "59f99e80c6c30a14c99c49602dcc95de94182a0f965f77835e0b0f514fe5618d"
+    },
+    {
+      "path": "config/video/daylight_video_evidence_map.csv",
+      "size_bytes": 1757,
+      "sha256": "c7612ad0d4412256b621956e6bf6ee213c9c4ecd855c49eb144356d3aff89b77"
+    },
+    {
+      "path": "config/video/daylight_video_obs_scenes.csv",
+      "size_bytes": 3886,
+      "sha256": "15bf5091fd7e5ca400288bae3ca18a0c10e587b10cedf4ae3e73b52570f53af8"
+    },
+    {
+      "path": "config/video/daylight_video_open_order.csv",
+      "size_bytes": 1148,
+      "sha256": "5fb1b4ea37e3421ea6e41452cec1f494c36d457d0af2cbbcfe6875e56b665ac4"
+    },
+    {
+      "path": "config/video/daylight_video_recording_checklist.csv",
+      "size_bytes": 1377,
+      "sha256": "fd90fa8de080be54964bbdf9e6ad0a15dd1cb67455fe8d41b0cb283689473f06"
+    },
+    {
+      "path": "config/video/daylight_video_shotlist.csv",
+      "size_bytes": 1509,
+      "sha256": "27fbc3e0f028111b22aa7c75ebdf2d7b96c2fb8e252e459d2fbb02a808ba8647"
+    },
+    {
+      "path": "config/video/youtube_description_daylight.txt",
+      "size_bytes": 808,
+      "sha256": "f949da3850b360d998eb391f96863047c6712c652226bc523804e801f63fe93d"
+    },
+    {
+      "path": "config/wazuh/daylight_alert_qualification_matrix.csv",
+      "size_bytes": 1941,
+      "sha256": "5f6d11f8a88c89af4b67d36216042a40ab76abf74e415cf26105c0e180b0a907"
+    },
+    {
+      "path": "config/wazuh/daylight_dashboard_queries.csv",
+      "size_bytes": 1338,
+      "sha256": "64208fffd58925f226f1cb3a947c3a771b3a7b595856f271e64b0c13812a1977"
+    },
+    {
+      "path": "config/wazuh/local_rules_daylight_pfsense.xml",
+      "size_bytes": 2912,
+      "sha256": "7478af34950909460b598bcaa529f5aa4e986f35a6a318936fcf64aab2bb9005"
+    },
+    {
+      "path": "Dashboards_Offline/daylight_compliance_matrix.html",
+      "size_bytes": 10454,
+      "sha256": "76763f25383afc7cd116b76f7870977cecdb7470698cebb55c5759e6a4438f7f"
+    },
+    {
+      "path": "Dashboards_Offline/daylight_demo_control_center.html",
+      "size_bytes": 14797,
+      "sha256": "a03f6f86d57b3e14739c18065e5624a0cf11e2a69ced09121f08759d8d93854d"
+    },
+    {
+      "path": "Dashboards_Offline/daylight_final_evidence_status.html",
+      "size_bytes": 4417,
+      "sha256": "c5bd66bc5d77be4102fdd5ffe2d6cdfacef49204126143b822be17306cd2d185"
+    },
+    {
+      "path": "Dashboards_Offline/daylight_jury_defense_pack.html",
+      "size_bytes": 10075,
+      "sha256": "3a388a5e61f2a5b9224dd9ad781c70f883886ee79fbbf6dc1662c809d61e8511"
+    },
+    {
+      "path": "Dashboards_Offline/daylight_pfsense_firewall_review.html",
+      "size_bytes": 18652,
+      "sha256": "a691740eed71ac6bd4cabd907bcc5609aefa099dd71dc2a34fc4ed2577d2bfa8"
+    },
+    {
+      "path": "Dashboards_Offline/daylight_soc_dashboard.html",
+      "size_bytes": 7807,
+      "sha256": "c4899aa976391263fdb735307e134ff1a4247adad7578f9080a27558bb59513a"
+    },
+    {
+      "path": "Dashboards_Offline/daylight_video_overlays.html",
+      "size_bytes": 2687,
+      "sha256": "649925aba71538517b7b56b55c132e3f9f395c6fafdb734751e552a8df704a24"
+    },
+    {
+      "path": "Dashboards_Offline/daylight_video_recording_pack.html",
+      "size_bytes": 10280,
+      "sha256": "e7760f0e87ebc48747cd2cebacb3e2a82e41bb779c161bb8cf04dda075b18b1b"
+    },
+    {
+      "path": "Dashboards_Offline/daylight_video_teleprompter.html",
+      "size_bytes": 11869,
+      "sha256": "7da08829583ee4690ab9bb1ab1b6e745a7c884f8673bcb70d9c13f3432783fde"
+    },
+    {
+      "path": "Demo_Logs/ad_files.log",
+      "size_bytes": 474,
+      "sha256": "e30c1996b788aa137088035c86250015004aa504abc52db991b369052c739968"
+    },
+    {
+      "path": "Demo_Logs/daylight_app.log",
+      "size_bytes": 574,
+      "sha256": "aea7905544e46439d4a878725535b2618b3ce79dfa6da91771539d89b393dc22"
+    },
+    {
+      "path": "Demo_Logs/endpoint_usb.log",
+      "size_bytes": 307,
+      "sha256": "ab69b1494f75f8bd6c684658f935e3802474ddd3c1f73ef4e4dcfa8cced7e87f"
+    },
+    {
+      "path": "Demo_Logs/mail_phishing.log",
+      "size_bytes": 360,
+      "sha256": "35a34318c0a078410918243701dae878807ff285e91fd3689252abde450df414"
+    },
+    {
+      "path": "Demo_Logs/pfsense.log",
+      "size_bytes": 971,
+      "sha256": "1f8d6f26401334df209d22adbfe0acbd3a6b4d6f84ab05f03d1201105a574d42"
+    },
+    {
+      "path": "Kilyan FELIX/PE-2526_M2CS_KilyanFELIX.md",
+      "size_bytes": 4990,
+      "sha256": "97708692a0c714bef3b7517645e4a8134fe9f443758090d58110424898dffc3e"
+    },
+    {
+      "path": "Mahamadou DIACOUMBA/PE-2526_M2CS_MahamadouDIACOUMBA.md",
+      "size_bytes": 4923,
+      "sha256": "5797a30a4d5e5716d0c3dcb07fadbc3de187cdfb5a8316ae652308cea43fb7b9"
+    },
+    {
+      "path": "Presentation_Daylight_CyberTrust.pptx",
+      "size_bytes": 30175,
+      "sha256": "f8270543508bd0eb905675ed35c4b36e65ae8c63e3bdabea6e16a915b92449c2"
+    },
+    {
+      "path": "README_LIVRABLES.md",
+      "size_bytes": 13362,
+      "sha256": "a97a0501030110ea00b3e45f48d19ce1447110791b8145e3113edb4d3d0123a8"
+    },
+    {
+      "path": "Rendus_PDF/00_REGISTRE_EXIGENCES_ET_SYNTHESE.pdf",
+      "size_bytes": 571013,
+      "sha256": "1ba0cf59878089853f8431d0ca769449f4bf2ec28451c945bbc3455fe8f1687c"
+    },
+    {
+      "path": "Rendus_PDF/02_GUIDE_DEPLOIEMENT_UTILISATION.pdf",
+      "size_bytes": 557809,
+      "sha256": "4973cb4305ef98e7d3ea50b57aa2756edbf07a58c0243233667840dc45bf9988"
+    },
+    {
+      "path": "Rendus_PDF/03_PLAYBOOKS_PROCEDURES_REX.pdf",
+      "size_bytes": 867285,
+      "sha256": "6b15f1fada25c36401da47fefc3d93c1844f5c3a944599921cabd71920609f85"
+    },
+    {
+      "path": "Rendus_PDF/04_SCRIPT_VIDEO_DEMO.pdf",
+      "size_bytes": 635290,
+      "sha256": "1c5fba91976b6911b932ad56c611dd39b53dfdf3ea6a15791e407a9d02ffd081"
+    },
+    {
+      "path": "Rendus_PDF/05_BACKLOG_PLANNING.pdf",
+      "size_bytes": 353603,
+      "sha256": "d7ef2e63ca038e330863de4456cdbc439c2e18ca7cd3073121820ed7398a6b43"
+    },
+    {
+      "path": "Rendus_PDF/06_SUPPORT_PRESENTATION.pdf",
+      "size_bytes": 722808,
+      "sha256": "f035c76e09b58c9289036a77fbc1d33a8362fe2707d117ec67f2e86187e71e17"
+    },
+    {
+      "path": "Rendus_PDF/07_DOSSIER_PREUVES_CAPTURES.pdf",
+      "size_bytes": 388563,
+      "sha256": "ae7067d65d0a1ce99565f1a30b0c59cd7b02ce7d8949ae1528cfec9e6d36332c"
+    },
+    {
+      "path": "Rendus_PDF/08_AUDIT_FINAL_CONSIGNES.pdf",
+      "size_bytes": 435536,
+      "sha256": "027720fc990db8ff3e0a2fc6ac5d712e942a28e9248a1a089fab58a243d373d6"
+    },
+    {
+      "path": "Rendus_PDF/09_NOTES_ORATEUR_SOUTENANCE.pdf",
+      "size_bytes": 635783,
+      "sha256": "b9ebe52715c6a089a7e21646e078f0c5f39dc78e398794cd0d568b73a964c7c6"
+    },
+    {
+      "path": "Rendus_PDF/10_MODE_OPERATOIRE_DEMO_JOUR_J.pdf",
+      "size_bytes": 612602,
+      "sha256": "b781a403b5098515827e005361bfc60e8c779152783ebf8461b426804556a366"
+    },
+    {
+      "path": "Rendus_PDF/11_CHECKLIST_DEPOT_FINAL.pdf",
+      "size_bytes": 438173,
+      "sha256": "bf7d634d178d290b378f327249f16e8ca7ed54ba566c3b8afb521de1bde53d4a"
+    },
+    {
+      "path": "Rendus_PDF/12_RISQUES_RGPD_CONFORMITE.pdf",
+      "size_bytes": 524899,
+      "sha256": "65a24372c0f8a29aedcaacf2decfddc24b6730cb724f6a2171ecab9906ec805f"
+    },
+    {
+      "path": "Rendus_PDF/13_PLAN_RECETTE_ACCEPTATION.pdf",
+      "size_bytes": 401234,
+      "sha256": "48dd3843ff667f9a0ec1aeaa5b476eabd597742bef9275a5d8280e648571fa2a"
+    },
+    {
+      "path": "Rendus_PDF/14_SYNTHESE_EXECUTIVE_CLIENT.pdf",
+      "size_bytes": 376918,
+      "sha256": "275256f9e742b33b77c4db4bc9590c5ee0d520b44fcc9650af69f63e208e7dd1"
+    },
+    {
+      "path": "Rendus_PDF/15_QA_SOUTENANCE_JURY_CLIENT.pdf",
+      "size_bytes": 747530,
+      "sha256": "dab1ae2f55928df872a9529532f95cb6e8f0bdaced78a224efaafafcc0fb328a"
+    },
+    {
+      "path": "Rendus_PDF/16_ANNEXE_CAPTURES_WAZUH.pdf",
+      "size_bytes": 1452551,
+      "sha256": "24ecafac502e572fc558cdff2075e86b8136c440a54be8df9945f3e853e97ba8"
+    },
+    {
+      "path": "Rendus_PDF/17_DOSSIER_GROUPE_COMPLET_INDEX.pdf",
+      "size_bytes": 344933,
+      "sha256": "676b606ebc649d3067f7713155d294f1f9a9d7cbcc4dcacd26760eb9ccaf7d42"
+    },
+    {
+      "path": "Rendus_PDF/18_SOLUTIONS_CONCRETES_DEMO.pdf",
+      "size_bytes": 777768,
+      "sha256": "02a7c632952cf3cc2ffca5b7dbe8c2ac1659b7a11e077d332bc467ce1111816e"
+    },
+    {
+      "path": "Rendus_PDF/19_ROLES_CONTRIBUTIONS_PREUVES.pdf",
+      "size_bytes": 544837,
+      "sha256": "58913cefacaddf21f1da7f81daa4489a5a41cb1f91230e792ace43ab00220499"
+    },
+    {
+      "path": "Rendus_PDF/20_MODE_OPERATOIRE_PFSENSE_WAZUH_LAB.pdf",
+      "size_bytes": 942221,
+      "sha256": "668b9318bb3674a1603c680096e75a795f151efe7062fbc32b14f02e48b2c6bd"
+    },
+    {
+      "path": "Rendus_PDF/21_DASHBOARDS_ALERTES_QUALIFICATION.pdf",
+      "size_bytes": 740199,
+      "sha256": "e7f0c0807c7590cf4345161cdce1c492a6c0a72de797adaeaaf2d25c27384f01"
+    },
+    {
+      "path": "Rendus_PDF/22_EXPLOITATION_VM_RUNBOOK_REX.pdf",
+      "size_bytes": 691188,
+      "sha256": "3b9704462f0996f83e2cf99a55ea90762a2bdb9c91e7955f3e78d8372d4a142f"
+    },
+    {
+      "path": "Rendus_PDF/23_PREUVES_FINALES_CAPTURES_VIDEO_DEPOT.pdf",
+      "size_bytes": 492606,
+      "sha256": "e42b7b90a051918abb25a8c484dcea8e7e04f3c98478d451a2e88c724ff94581"
+    },
+    {
+      "path": "Rendus_PDF/24_DASHBOARD_SOC_OFFLINE.pdf",
+      "size_bytes": 408524,
+      "sha256": "ffac01958bb252eb23d783e9b10888106d7f5cb862735f75f9e86c94b321dc5f"
+    },
+    {
+      "path": "Rendus_PDF/25_MODE_OPERATOIRE_CAPTURE_WAZUH_PREUVES.pdf",
+      "size_bytes": 681913,
+      "sha256": "4e25a8b5dd9d51319173f9d77f3ba1cce9f7dd293a1c45cbd90ad81a65ab58ca"
+    },
+    {
+      "path": "Rendus_PDF/26_MODE_OPERATOIRE_VIDEO_DEPOT.pdf",
+      "size_bytes": 595056,
+      "sha256": "591d3d4e846b196c4b7fb9a70df9c8ff582d63daa450ad512fd591487382e19c"
+    },
+    {
+      "path": "Rendus_PDF/27_MANIFESTE_DEPOT_ET_INTEGRITE.pdf",
+      "size_bytes": 318121,
+      "sha256": "7a30ffe87ff1f622e26ecf582bc5e84edc2d62ad41e38fd57c94de4fde2b82bc"
+    },
+    {
+      "path": "Rendus_PDF/28_RUNBOOK_EXPRESS_PREUVES_RESTANTES.pdf",
+      "size_bytes": 511329,
+      "sha256": "c78d14ad766e10d617f4c3350282c77bc6f1f275d63a6d4357a69f04628ec961"
+    },
+    {
+      "path": "Rendus_PDF/29_IMPORT_PREUVES_FINALES.pdf",
+      "size_bytes": 368807,
+      "sha256": "8402cf2e8befe92c031fd1693a9405404acfac9ad4cc3114dacbe8f9c2ed5060"
+    },
+    {
+      "path": "Rendus_PDF/30_TABLEAU_BORD_STATUT_FINAL.pdf",
+      "size_bytes": 240742,
+      "sha256": "b90d21f9d83e7be6a93fa36a5fecc53e1303c657180120cd3c70eb8ee74b8569"
+    },
+    {
+      "path": "Rendus_PDF/31_PACK_SOUTENANCE_JURY.pdf",
+      "size_bytes": 586139,
+      "sha256": "c2670b72fe6f5343ff78bf1499897dc90d8507bebf38257430580d5683a05ccb"
+    },
+    {
+      "path": "Rendus_PDF/32_MATRICE_CONFORMITE_CAHIER_DES_CHARGES.pdf",
+      "size_bytes": 522143,
+      "sha256": "93ceab3cc86bb8b656a43c9c8b0bfc33fe0f51555ed626bafb473360409e0aab"
+    },
+    {
+      "path": "Rendus_PDF/33_RUNBOOK_ENREGISTREMENT_VIDEO_IMMEDIAT.pdf",
+      "size_bytes": 682753,
+      "sha256": "d8e9061e40c696115bd7a63b4f3c3160e589f810047c876007f4bc4c809cfbcc"
+    },
+    {
+      "path": "Rendus_PDF/PE-2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_DossierGroupeComplet.pdf",
+      "size_bytes": 16641441,
+      "sha256": "7cebb4e0e6efbcb874c4c666009cf96283f605edb6b18edcdf9efb4d747dddcd"
+    },
+    {
+      "path": "Rendus_PDF/PE-2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_RapportGroupe.pdf",
+      "size_bytes": 1325067,
+      "sha256": "02f6f8fce281eeed332c466e8b794960e3c8cd12bf0f3a78702f93da26a2b4fd"
+    },
+    {
+      "path": "Rendus_PDF/PE-2526_M2CS_KilyanFELIX.pdf",
+      "size_bytes": 544025,
+      "sha256": "3e2cd89df4ec0a9f2e63fbd6e648d79470681ac86913e068963f6491252dac26"
+    },
+    {
+      "path": "Rendus_PDF/PE-2526_M2CS_MahamadouDIACOUMBA.pdf",
+      "size_bytes": 549082,
+      "sha256": "12a65f54fde56dcebc9b835a492887aeeac080e0ea541a1f31fa18f5d5959499"
+    },
+    {
+      "path": "Rendus_PDF/PE-2526_M2CS_YoussefGUERNIOU.pdf",
+      "size_bytes": 546909,
+      "sha256": "811f77e8c977127414b76b274ec08267df5c6f16b1a045f23d39665fd96882c7"
+    },
+    {
+      "path": "Rendus_PDF/PE-2526_M2CS_YvanFOCSA.pdf",
+      "size_bytes": 564519,
+      "sha256": "5b74c09bf53f5eb08e1c4510d358f55ed94111e461678a6df78a2762edae1ee7"
+    },
+    {
+      "path": "Rendus_PDF/README_LIVRABLES.pdf",
+      "size_bytes": 1190021,
+      "sha256": "23862e443a0fbba2cbef184c805711f90457ae4dfb9e4c96d0b80b71ce337b65"
+    },
+    {
+      "path": "tools/build_capture_annex.py",
+      "size_bytes": 4168,
+      "sha256": "9e9270cba0171e68e8ca3822244e1b109bf9e477e0abf5579a0c1510778c446c"
+    },
+    {
+      "path": "tools/build_compliance_matrix.py",
+      "size_bytes": 15279,
+      "sha256": "36809fb68e80b5fd1992b42a474554cb5b6a998b7f7272f51845a54d1ba3b4f9"
+    },
+    {
+      "path": "tools/build_delivery_manifest.py",
+      "size_bytes": 11525,
+      "sha256": "53866232a700cfb3515e82d2eb0db1212399bcac5c251751900654ed3f43bf66"
+    },
+    {
+      "path": "tools/build_demo_control_center.py",
+      "size_bytes": 18665,
+      "sha256": "a55947d815f6f82c9c58b0956af9106fc572c81a742f783bf079c334a67e01df"
+    },
+    {
+      "path": "tools/build_final_evidence_dashboard.py",
+      "size_bytes": 9648,
+      "sha256": "ff634e0c9a37320629c927a664b7faa2cf1156464f36d35a543f52194a369d34"
+    },
+    {
+      "path": "tools/build_group_dossier_pdf.py",
+      "size_bytes": 3781,
+      "sha256": "b8040ed10db362fbd40cd0fef0a24deeb6853595960dfd1f49da62f9c731ec50"
+    },
+    {
+      "path": "tools/build_jury_defense_pack.py",
+      "size_bytes": 16341,
+      "sha256": "c634780abec892188cdbef9d7a10785db6800a8f57c3af51265f89deaefbce21"
+    },
+    {
+      "path": "tools/build_offline_soc_dashboard.py",
+      "size_bytes": 19555,
+      "sha256": "0c915bda8208a4c94dba5fb23b9f5e8c72d625bf9d4a900b136412946ad5b0d3"
+    },
+    {
+      "path": "tools/build_pfsense_demo_pack.py",
+      "size_bytes": 19193,
+      "sha256": "b7b2e322a48f86fa50caa4f6031ba9e3b1a146e9414b490c3dc6c8bbf9a790e7"
+    },
+    {
+      "path": "tools/build_presentation_pptx.py",
+      "size_bytes": 15397,
+      "sha256": "0eff6264e7d27f3f06860f0e5bcc770ca6739a578dd2a6a214db0ea800b014a0"
+    },
+    {
+      "path": "tools/build_video_overlays.py",
+      "size_bytes": 7201,
+      "sha256": "0a3836d0c1e94f735a9c37ce380c2f17eceb53f4a858060f85db2b91d790cc52"
+    },
+    {
+      "path": "tools/build_video_recording_pack.py",
+      "size_bytes": 13290,
+      "sha256": "8dc1171910c97d06a430b733f15c549a8ce289708e008b95acbfbcc3b18c9e48"
+    },
+    {
+      "path": "tools/build_video_teleprompter.py",
+      "size_bytes": 8079,
+      "sha256": "9770ff7e5218be0e85ae51a9afd67f4bac10fdbab6153957b9b3fa354c4cc73b"
+    },
+    {
+      "path": "tools/check_capture_pack.py",
+      "size_bytes": 2687,
+      "sha256": "b209dfaf021f176ae6d23ae5678bc5801483c2ef70cd65410c9c03f4eacb3f7f"
+    },
+    {
+      "path": "tools/check_video_ready.py",
+      "size_bytes": 3281,
+      "sha256": "80c781982a7aff6c954de5b2756808b7467feb1278c0ace026dfef461e328f36"
+    },
+    {
+      "path": "tools/export_markdown_to_pdf.py",
+      "size_bytes": 8060,
+      "sha256": "019827f9799f99af5197e0239c0a664ca7eee3a5162a81259288c2ae4597556f"
+    },
+    {
+      "path": "tools/export_markdown_to_pdf_pillow.py",
+      "size_bytes": 6444,
+      "sha256": "4e1d84d610478632c26844078cd65a0799a4149d6423461e5336d790bb16f7a0"
+    },
+    {
+      "path": "tools/extract_youssef_wazuh_proofs.py",
+      "size_bytes": 6517,
+      "sha256": "675ae4c3887907632db1159e1cf5cdafabcabcf29f95d6e7b7a68be63141fabf"
+    },
+    {
+      "path": "tools/finalize_project.ps1",
+      "size_bytes": 7427,
+      "sha256": "4b023a320e07a79ed475a9297fd1145bdf2c3501d1fae9b1f7c3a324e3f6c946"
+    },
+    {
+      "path": "tools/generate_demo_logs.py",
+      "size_bytes": 4430,
+      "sha256": "8a4ac43e735113f2181a612d097644077ef5e3584f67b800bc318f8c0e7d224a"
+    },
+    {
+      "path": "tools/import_final_evidence.ps1",
+      "size_bytes": 5169,
+      "sha256": "5306d949da1c5663baf1cbed8534aa482523d1df9345e7abb1b8c59546308783"
+    },
+    {
+      "path": "tools/launch_video_recording_session.ps1",
+      "size_bytes": 3819,
+      "sha256": "30f2ed664745ad8a9e9f51da26209acbbc944e5b1c3ffd1bf63d717541cc9f64"
+    },
+    {
+      "path": "tools/open_demo_control_center.ps1",
+      "size_bytes": 2025,
+      "sha256": "845517ce058b611ef96b19129f8a5e0b3a609d3f31ea727dda2aa3b4a99d1da2"
+    },
+    {
+      "path": "tools/post_capture_finalize.ps1",
+      "size_bytes": 5312,
+      "sha256": "75716876d010224a50aa34ce65638e91f55cc01262bbc8a46092d5afd72bfb89"
+    },
+    {
+      "path": "tools/preflight_demo.ps1",
+      "size_bytes": 12252,
+      "sha256": "7a9e085712d4f4e0f58c1465601fc512c351f9e1053147e1a19e10edd725a42a"
+    },
+    {
+      "path": "tools/prepare_capture_session.ps1",
+      "size_bytes": 3654,
+      "sha256": "eeae1496e362796b9c8068d68f357eca12f5f587f2369f7ddc903fbd8bb75756"
+    },
+    {
+      "path": "tools/rebuild_rendu_final.ps1",
+      "size_bytes": 18940,
+      "sha256": "944e39e7af65afe2e9da0a624984502acc08d08a54ca8cd1e603811352c35989"
+    },
+    {
+      "path": "tools/render_documentary_proof_images.py",
+      "size_bytes": 12700,
+      "sha256": "db131680721be9e16c66cfff3aec5fa3969c5155d27fe72c295cece8ec0518c9"
+    },
+    {
+      "path": "tools/render_preflight_evidence.py",
+      "size_bytes": 4967,
+      "sha256": "bd725db7571dda6ac4e22c71b911d46c2a82e4b8b322460748fc8f4dc35c4d17"
+    },
+    {
+      "path": "tools/render_static_proof_images.py",
+      "size_bytes": 8984,
+      "sha256": "fe291e2cacec4ee17773d1d09c264e230e7834230ae19b14d2c27c0aa729f42b"
+    },
+    {
+      "path": "tools/repair_lab_and_capture_cap25.ps1",
+      "size_bytes": 9063,
+      "sha256": "46b7ccec032f981a15f77bb210c6d0bfe0ee6a4d0213c06a909cfd344916444f"
+    },
+    {
+      "path": "tools/send_demo_logs_to_syslog.py",
+      "size_bytes": 3131,
+      "sha256": "f2f20234ac77185244b75d64534e9770338ebc5b87698a1a9f482067c9f3247e"
+    },
+    {
+      "path": "tools/validate_rendu_final.py",
+      "size_bytes": 15124,
+      "sha256": "19c76425b06747c904e2e14377e7bac36442c43fc06f4e53fd3b335d6b57f18c"
+    },
+    {
+      "path": "Video_Overlays/overlay_equipe_cyber_trust.png",
+      "size_bytes": 27058,
+      "sha256": "2f3f9e6190e66bb81cfbc6c9ed22eb43e92174fef93f4f746eae4f17f6ddeaa9"
+    },
+    {
+      "path": "Video_Overlays/overlay_kilyan_felix.png",
+      "size_bytes": 24678,
+      "sha256": "d9b0d06a17134709479e9f1ba91898c09bf40428d32f8df83587a7731704cb8a"
+    },
+    {
+      "path": "Video_Overlays/overlay_mahamadou_diacoumba.png",
+      "size_bytes": 31433,
+      "sha256": "8cf5f50e41e1e1c6ee6445c66f7708f11255d59ed8a2ac31e47c5df86a5e08dd"
+    },
+    {
+      "path": "Video_Overlays/overlay_youssef_guerniou.png",
+      "size_bytes": 29516,
+      "sha256": "a4948a6e5f6f9ca309aea7a29cb9028f0740b92229f513bd2f2a6e611feeb899"
+    },
+    {
+      "path": "Video_Overlays/overlay_yvan_focsa.png",
+      "size_bytes": 26646,
+      "sha256": "c8b3c242059266fcedeaa7b8b26f030409bf71ca581f93b0b7060bdc2abeec82"
+    },
+    {
+      "path": "Video_Overlays/README_VIDEO_OVERLAYS.md",
+      "size_bytes": 1010,
+      "sha256": "f97d2277ab97a65c67f0cb8bf98447dedbca854cacdba813311bdaa9eaa27df5"
+    },
+    {
+      "path": "Youssef GUERNIOU/PE-2526_M2CS_YoussefGUERNIOU.md",
+      "size_bytes": 4746,
+      "sha256": "67485bfeefbb73aa1281d80c5d6cbcdd2bcfd122ffe817c76e03a025384fd3eb"
+    },
+    {
+      "path": "Yvan FOCSA/PE-2526_M2CS_YvanFOCSA.md",
+      "size_bytes": 5034,
+      "sha256": "08c3049d501f43fd966915548f2fee297739ae0aea941de4d0186e8ac78918ae"
+    }
+  ],
+  "zip_hash_note": "Le hash final du ZIP est produit dans le fichier .sha256 adjacent apres compression, car l'archive contient ce manifeste et ne peut pas contenir sa propre empreinte finale."
+}

@@ -1,0 +1,8 @@
+=== Pack enregistrement video Daylight / Cyber Trust ===
+Generation : 2026-06-23 19:59:15
+HTML : C:\Users\Ivan\Pictures\PROJET M2\Dashboards_Offline\daylight_video_recording_pack.html
+Scenes OBS : C:\Users\Ivan\Pictures\PROJET M2\config\video\daylight_video_obs_scenes.csv
+Evidence map : C:\Users\Ivan\Pictures\PROJET M2\config\video\daylight_video_evidence_map.csv
+Scenes : 12
+Checklist : 14
+Usage : ouvrir le HTML avant l'enregistrement et suivre les scenes dans l'ordre.

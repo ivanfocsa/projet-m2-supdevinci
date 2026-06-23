@@ -1,0 +1,64 @@
+﻿=== Finalisation projet Daylight / Cyber Trust ===
+Racine : C:\Users\Ivan\Pictures\PROJET M2
+Date   : 2026-06-23 16:29:15
+Note   : les avertissements attendus avant depot officiel concernent les captures Wazuh/preflight et le lien video.
+
+=== Generation logs demo concrets ===
+[OK] Generation logs demo concrets
+
+=== Generation images preuves statiques ===
+[OK] Generation images preuves statiques
+
+=== Generation dashboard SOC offline ===
+[OK] Generation dashboard SOC offline
+
+=== Generation annexe captures ===
+[OK] Generation annexe captures
+
+=== Verification pack captures ===
+[WARN] Verification pack captures termine avec code 1, continuation autorisee.
+
+=== Export PDF Markdown ===
+[OK] Export PDF Markdown
+
+=== Generation PowerPoint ===
+[OK] Generation PowerPoint
+
+=== Fusion dossier groupe complet ===
+[OK] Fusion dossier groupe complet
+
+=== Preflight demo ===
+[OK] Preflight demo
+
+=== Generation preuve preflight ===
+[WARN] Generation preuve preflight termine avec code 1, continuation autorisee.
+
+=== Verification video ===
+[WARN] Verification video termine avec code 1, continuation autorisee.
+
+=== Generation annexe captures apres preflight ===
+[OK] Generation annexe captures apres preflight
+
+=== Export PDF Markdown apres preflight ===
+[OK] Export PDF Markdown apres preflight
+
+=== Fusion dossier groupe complet apres preflight ===
+[OK] Fusion dossier groupe complet apres preflight
+
+=== Reconstruction rendu final avant validation ===
+[OK] Reconstruction rendu final avant validation
+
+=== Validation rendu final ===
+[WARN] Validation rendu final termine avec code 1, continuation autorisee.
+
+=== Reconstruction rendu final apres validation ===
+[OK] Reconstruction rendu final apres validation
+
+=== Synthese finale ===
+ZIP      : C:\Users\Ivan\Pictures\PROJET M2\PE_2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA.zip
+Taille   : 8287540 octets
+PDF      : 33
+Captures : 6
+Video    : lien manquant
+Rapport  : C:\Users\Ivan\Pictures\PROJET M2\finalize-project-report.txt
+[OK] Rapport finalisation inclus dans le ZIP

@@ -1,0 +1,8 @@
+=== Pack defense jury Daylight / Cyber Trust ===
+Generation : 2026-06-23 19:59:15
+Markdown : C:\Users\Ivan\Pictures\PROJET M2\31_PACK_SOUTENANCE_JURY.md
+HTML : C:\Users\Ivan\Pictures\PROJET M2\Dashboards_Offline\daylight_jury_defense_pack.html
+Cartes questions : C:\Users\Ivan\Pictures\PROJET M2\config\video\daylight_jury_response_cards.csv
+Parcours demo : C:\Users\Ivan\Pictures\PROJET M2\config\video\daylight_jury_demo_path.csv
+Questions : 10
+Etapes demo : 8

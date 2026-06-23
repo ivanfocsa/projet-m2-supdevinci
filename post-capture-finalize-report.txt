@@ -1,0 +1,77 @@
+﻿=== Finalisation apres captures reelles - Daylight / Cyber Trust ===
+Racine : C:\Users\Ivan\Pictures\PROJET M2
+Date   : 2026-06-23 19:58:57
+Usage  : a lancer apres ajout de CAP-01, CAP-02, CAP-03, CAP-25 et du lien video/MP4.
+
+=== Extraction preuves Wazuh Youssef ===
+[OK] Extraction preuves Wazuh Youssef
+
+=== Generation preuves documentaires ===
+[OK] Generation preuves documentaires
+
+=== Generation teleprompteur video ===
+[OK] Generation teleprompteur video
+
+=== Generation overlays video ===
+[OK] Generation overlays video
+
+=== Generation pack enregistrement video ===
+[OK] Generation pack enregistrement video
+
+=== Controle lanceur enregistrement video ===
+[OK] Controle lanceur enregistrement video
+
+=== Generation pack defense jury ===
+[OK] Generation pack defense jury
+
+=== Generation matrice conformite ===
+[OK] Generation matrice conformite
+
+=== Generation pack demo pfSense ===
+[OK] Generation pack demo pfSense
+
+=== Generation dashboard statut preuves ===
+[WARN] Generation dashboard statut preuves termine avec code 1, continuation autorisee.
+
+=== Generation centre controle demo ===
+[OK] Generation centre controle demo
+
+=== Controle captures ===
+[OK] Controle captures
+
+=== Controle video ===
+[WARN] Controle video termine avec code 1, continuation autorisee.
+
+=== Reconstruction annexe captures ===
+[OK] Reconstruction annexe captures
+
+=== Generation manifeste depot ===
+[OK] Generation manifeste depot
+
+=== Export PDF Markdown ===
+[OK] Export PDF Markdown
+
+=== Export PDF fallback Pillow ===
+[OK] Export PDF fallback Pillow
+
+=== Fusion dossier groupe complet ===
+[OK] Fusion dossier groupe complet
+
+=== Generation manifeste apres PDF ===
+[OK] Generation manifeste apres PDF
+
+=== Reconstruction rendu final ===
+[OK] Reconstruction rendu final
+
+=== Validation rendu final ===
+[WARN] Validation rendu final termine avec code 1, continuation autorisee.
+
+=== Reconstruction finale avec rapport validation ===
+[OK] Reconstruction finale avec rapport validation
+
+ZIP      : C:\Users\Ivan\Pictures\PROJET M2\PE_2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA.zip
+SHA-256  : 215c9d64aa588077ae39a6e52df10ed00a34391b4558080f398be7321c78f38a
+Hash txt : C:\Users\Ivan\Pictures\PROJET M2\PE_2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA.zip.sha256
+PDF      : 40
+Captures : 27
+Rapport  : C:\Users\Ivan\Pictures\PROJET M2\post-capture-finalize-report.txt

@@ -1,7 +1,30 @@
-*
-!.gitignore
-!README.md
-!Rendu_Simple_5PDF/
-!Rendu_Simple_5PDF/*.pdf
-!PE_2526_M2CS_Daylight_CyberTrust_Rendu_5PDF.zip
-!PE_2526_M2CS_Daylight_CyberTrust_Rendu_5PDF.zip.sha256
+# Fichiers systeme / caches
+.DS_Store
+Thumbs.db
+desktop.ini
+__pycache__/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# Dossiers locaux temporaires
+.agents/
+.venv/
+venv/
+node_modules/
+
+# Exports regenerables ou doublons volumineux
+Rendus_HTML/
+Rendus_HTML_Template/
+Rendus_PDF/
+Rendu_Final/
+
+# Ancien pack complet non simplifie, remplace par le rendu 5 PDF
+PE_2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA.zip
+PE_2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA.zip.sha256
+
+# Fichiers Office temporaires
+~$*
+*.tmp
+*.bak

@@ -1,0 +1,5 @@
+=== Overlays video Daylight / Cyber Trust ===
+Images : 5
+Dossier : C:\Users\Ivan\Pictures\PROJET M2\Video_Overlays
+Preview HTML : C:\Users\Ivan\Pictures\PROJET M2\Dashboards_Offline\daylight_video_overlays.html
+Usage : afficher le PNG correspondant pendant chaque prise de parole.

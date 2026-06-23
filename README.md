@@ -2,6 +2,22 @@
 
 Rendu simplifie du projet M2 SUPDEVINCI pour le client fictif Daylight, realise par l'equipe Cyber Trust.
 
+## Contenu du repository
+
+Ce repository contient le rendu final et les sources utiles du projet :
+
+- `Rendu_Simple_5PDF/` : les 5 PDF finaux a deposer.
+- `config/wazuh/` : regles Wazuh, matrice de qualification, requetes dashboards.
+- `config/pfsense/` : aliases, regles firewall, NAT, topologie et syslog vers Wazuh.
+- `tools/` : scripts de generation, validation, preflight, logs demo, exports PDF.
+- `Annexes_Captures/` : captures et preuves du demonstrateur.
+- `Dashboards_Offline/` : dashboards HTML consultables sans SIEM live.
+- `Demo_Logs/` : logs de demonstration pour rejouer les scenarios.
+- `Video_Overlays/` et `config/video/` : supports pour la video de soutenance.
+- dossiers individuels : sources des rendus Yvan, Youssef, Kilyan et Mahamadou.
+
+Les dossiers generes en double comme `Rendus_PDF/`, `Rendus_HTML/` et `Rendu_Final/` ne sont pas versionnes car ils sont regenerables.
+
 ## Rendu a deposer
 
 Le dossier principal a utiliser est `Rendu_Simple_5PDF/`.

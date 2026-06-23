@@ -1,0 +1,14 @@
+=== Generation captures documentaires Daylight / Cyber Trust ===
+[OK] CAP-10_playbook-brute-force.png (84942 octets)
+[OK] CAP-11_rex-incident-acces-patient.png (63981 octets)
+[OK] CAP-14_pfsense-syslog-wazuh.png (79810 octets)
+[OK] CAP-15_script-setup-siem-lab.png (94786 octets)
+[OK] CAP-17_compte-supervision-dashboard.png (97891 octets)
+[OK] CAP-18_export-dashboard-report.png (88577 octets)
+[OK] CAP-19_wazuh-pfsense-alertes.png (139364 octets)
+[OK] CAP-20_wazuh-rejeu-logs-demo.png (100894 octets)
+[OK] CAP-24_qualification-alerte-110020.png (57831 octets)
+[OK] CAP-27_rejeu-logs-dry-run.png (109800 octets)
+[OK] CAP-28_rex-incident-rempli.png (74323 octets)
+
+Ces images sont documentaires : elles rendent visibles des preuves deja presentes dans les fichiers du projet.

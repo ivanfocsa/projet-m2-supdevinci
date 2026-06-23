@@ -1,0 +1,10 @@
+rule_id,scenario,severity,sla_triage,first_checks,immediate_action,escalation,proof
+5712,Brute force SSH,High,30 min,"source IP; user; success after failures; target server","Block source if confirmed; check account compromise","SOC analyst + exploitation","Wazuh alert + auth.log"
+100110,Brute force applicatif Daylight,High,30 min,"user; source IP; failure count; application endpoint","Lock account or rate-limit source if malicious","SOC + Daylight app owner","Wazuh alert + daylight_app.log"
+100120,Acces anormal dossier patient,Critical,15 min,"user role; patient_id; center; time; access volume","Confirm legitimacy; suspend session/account if suspicious","SOC + Daylight referent + DPO","Wazuh alert + patient access log"
+100130,Modification groupe privilegie,Critical,15 min,"actor; target group; member added; change source","Rollback unauthorized change; preserve evidence","SOC + AD admin + IT management","Wazuh alert + AD event"
+100140,USB non autorise,Medium/High,4 h,"user; endpoint; device_id; file execution","Ask support to remove device; scan endpoint","Support endpoint + local manager","Endpoint log + Wazuh alert"
+100150,Phishing signale,High,30 min,"sender; URL; attachment; clicked users","Block IOC; quarantine email; reset password if clicked","SOC + mail support","Mail log + report"
+110010,Scan WAN bloque,Medium,4 h,"src IP; dst port; repeat count; geolocation if available","Monitor and block if persistent","SOC monitoring","pfSense filterlog + Wazuh alert"
+110020,Inter-VLAN vers MGMT/SERVERS,Critical,15 min,"source host; destination zone; port; repetitions","Confirm pfSense block; isolate source host if suspicious","SOC + network exploitation","pfSense rule + Wazuh alert"
+110050,Flux sortant volumineux,Critical,15 min,"source server; destination IP; bytes; process/app context","Block destination if suspicious; investigate exfiltration","SOC + network + Daylight referent","pfSense log + Wazuh alert"

@@ -1,0 +1,12 @@
+=== Tableau de bord final des preuves Daylight / Cyber Trust ===
+Generation : 2026-06-23 19:59:16
+Captures prioritaires : 8/8
+Video : WARN - Lien YouTube ou MP4 final absent
+PDF : 40
+ZIP : OK
+
+Toutes les captures prioritaires sont presentes.
+
+Dashboard HTML : C:\Users\Ivan\Pictures\PROJET M2\Dashboards_Offline\daylight_final_evidence_status.html
+Commande finale apres preuves :
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\tools\post_capture_finalize.ps1

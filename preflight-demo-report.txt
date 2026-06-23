@@ -1,0 +1,112 @@
+﻿=== Preflight demo Daylight / Cyber Trust ===
+Racine projet : C:\Users\Ivan\Pictures\PROJET M2
+Date controle : 2026-06-23 19:41:42
+
+## Fichiers projet
+[OK]   Presentation_Daylight_CyberTrust.pptx - present
+[OK]   04_SCRIPT_VIDEO_DEMO.md - present
+[OK]   07_DOSSIER_PREUVES_CAPTURES.md - present
+[OK]   09_NOTES_ORATEUR_SOUTENANCE.md - present
+[OK]   Youssef GUERNIOU\setup-siem-lab.ps1 - present
+[OK]   Youssef GUERNIOU\Documentation_SIEM_Youssef_GUERNIOU.pdf - present
+[OK]   tools\rebuild_rendu_final.ps1 - present
+[OK]   tools\export_markdown_to_pdf_pillow.py - present
+[OK]   16_ANNEXE_CAPTURES_WAZUH.md - present
+[OK]   17_DOSSIER_GROUPE_COMPLET_INDEX.md - present
+[OK]   tools\build_group_dossier_pdf.py - present
+[OK]   tools\validate_rendu_final.py - present
+[OK]   tools\finalize_project.ps1 - present
+[OK]   18_SOLUTIONS_CONCRETES_DEMO.md - present
+[OK]   config\pfsense\pfsense_firewall_rules.csv - present
+[OK]   config\pfsense\pfsense_syslog_wazuh.md - present
+[OK]   config\wazuh\local_rules_daylight_pfsense.xml - present
+[OK]   tools\generate_demo_logs.py - present
+[OK]   tools\send_demo_logs_to_syslog.py - present
+[OK]   19_ROLES_CONTRIBUTIONS_PREUVES.md - present
+[OK]   20_MODE_OPERATOIRE_PFSENSE_WAZUH_LAB.md - present
+[OK]   config\pfsense\pfsense_lab_topology.csv - present
+[OK]   21_DASHBOARDS_ALERTES_QUALIFICATION.md - present
+[OK]   config\wazuh\daylight_dashboard_queries.csv - present
+[OK]   config\wazuh\daylight_alert_qualification_matrix.csv - present
+[OK]   22_EXPLOITATION_VM_RUNBOOK_REX.md - present
+[OK]   config\lab\daylight_vm_inventory.csv - present
+[OK]   config\lab\daylight_lab_runbook.csv - present
+[OK]   config\lab\daylight_rex_scenarios.csv - present
+[OK]   23_PREUVES_FINALES_CAPTURES_VIDEO_DEPOT.md - present
+[OK]   24_DASHBOARD_SOC_OFFLINE.md - present
+[OK]   config\captures\daylight_capture_checklist.csv - present
+[OK]   config\video\daylight_video_shotlist.csv - present
+[OK]   tools\check_capture_pack.py - present
+[OK]   tools\render_static_proof_images.py - present
+[OK]   tools\build_offline_soc_dashboard.py - present
+[OK]   tools\render_preflight_evidence.py - present
+[OK]   tools\prepare_capture_session.ps1 - present
+[OK]   25_MODE_OPERATOIRE_CAPTURE_WAZUH_PREUVES.md - present
+[OK]   26_MODE_OPERATOIRE_VIDEO_DEPOT.md - present
+[OK]   27_MANIFESTE_DEPOT_ET_INTEGRITE.md - present
+[OK]   28_RUNBOOK_EXPRESS_PREUVES_RESTANTES.md - present
+[OK]   29_IMPORT_PREUVES_FINALES.md - present
+[OK]   30_TABLEAU_BORD_STATUT_FINAL.md - present
+[OK]   tools\check_video_ready.py - present
+[OK]   tools\build_delivery_manifest.py - present
+[OK]   tools\post_capture_finalize.ps1 - present
+[OK]   tools\import_final_evidence.ps1 - present
+[OK]   tools\build_final_evidence_dashboard.py - present
+[OK]   tools\extract_youssef_wazuh_proofs.py - present
+[OK]   tools\render_documentary_proof_images.py - present
+[OK]   tools\build_video_teleprompter.py - present
+[OK]   tools\build_video_overlays.py - present
+[OK]   tools\build_demo_control_center.py - present
+[OK]   tools\open_demo_control_center.ps1 - present
+[OK]   tools\repair_lab_and_capture_cap25.ps1 - present
+[OK]   MANIFEST_DEPOT.md - present
+[OK]   MANIFEST_DEPOT.json - present
+[OK]   config\video\daylight_video_recording_checklist.csv - present
+[OK]   config\video\youtube_description_daylight.txt - present
+[OK]   config\captures\daylight_remaining_priority_captures.csv - present
+
+## Rendus
+[OK]   Rendus_PDF - 39 PDF detectes
+[OK]   Archive ZIP - presente
+[OK]   Rendu_Final - present
+
+## Captures et video
+[OK]   Captures CAP-*.png - 26 captures detectees
+[WARN] Lien video - lien YouTube non repertorie pas encore renseigne
+[OK]   Rapport video - rapport present
+## Solutions concretes
+[OK]   Logs demo Daylight - 5 fichiers .log detectes
+[OK]   Regles pfSense - matrice presente
+[OK]   Regles Wazuh custom - XML present
+[OK]   Images preuves statiques - architecture et matrice pfSense presentes
+[OK]   Dashboard SOC offline - HTML et captures dashboard presents
+[OK]   Overlays video nom/role - 4 bandeaux membres presents
+
+
+## Outils locaux
+[OK]   docker - commande disponible
+[OK]   npm - commande disponible
+[OK]   python - commande disponible
+[WARN] package.json lab npm - absent ici, lancer Wazuh depuis sa racine technique
+
+## Docker et conteneurs
+[OK]   Docker daemon - repond
+[OK]   Conteneurs Wazuh - 3 entree(s) detectee(s)
+[WARN] Conteneur serveur-01 - non detecte, lancer setup-siem-lab.ps1
+Conteneurs Wazuh detectes :
+  single-node-wazuh.dashboard-1|Up 4 minutes
+  single-node-wazuh.indexer-1|Up 4 minutes
+  single-node-wazuh.manager-1|Up 4 minutes
+
+## Acces Wazuh Dashboard
+[OK]   https://localhost - repond avec statut 200 via Python TLS lab
+
+## Prochaines commandes conseillees
+- Aucun package.json ici : lancer/demarrer Wazuh depuis la racine technique du lab, puis revenir dans ce dossier.
+- Si serveur-01 existe mais est eteint : docker start serveur-01
+- Pour guider la relance CAP-25 : C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\tools\repair_lab_and_capture_cap25.ps1 -StartDockerDesktop -StartKnownContainers -WaitSeconds 180
+- Pour preparer le perimetre SIEM : C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File ".\Youssef GUERNIOU\setup-siem-lab.ps1"
+- Pour finaliser apres captures/video : C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\tools\post_capture_finalize.ps1
+- Capturer les ecrans listes dans 07_DOSSIER_PREUVES_CAPTURES.md
+- Controler le pack captures : python .\tools\check_capture_pack.py
+- Coller le lien YouTube dans PE_2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_video-lien.txt

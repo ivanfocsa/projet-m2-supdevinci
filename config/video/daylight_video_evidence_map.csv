@@ -1,0 +1,13 @@
+scene_id,speaker,file_to_show,evidence,why_it_matters
+SCENE-01,Kilyan FELIX,Presentation/Presentation_Daylight_CyberTrust.pptx,Presentation_Daylight_CyberTrust.pptx,"Daylight, Cyber Trust, objective, team roles"
+SCENE-02,Yvan FOCSA,Annexes_Captures/CAP-12_architecture-solution.png,01_RAPPORT_TECHNIQUE_GROUPE.md,"SOC externalise, Wazuh, sources, target architecture"
+SCENE-03,Yvan FOCSA,Dashboards_Offline/daylight_pfsense_firewall_review.html,Dashboards_Offline/daylight_pfsense_firewall_review.html / config/pfsense/pfsense_demo_test_plan.csv,"Segmentation, regles firewall, NAT, tests pfSense, syslog Wazuh"
+SCENE-04,Youssef GUERNIOU,Annexes_Captures/CAP-01_wazuh-dashboard-login.png,CAP-01/CAP-02,Agents and SIEM access
+SCENE-05,Youssef GUERNIOU,Annexes_Captures/CAP-03_alerte-5712-brute-force-ssh.png,CAP-03/CAP-05,5712 and Daylight custom rules
+SCENE-06,Youssef GUERNIOU,Annexes_Captures/CAP-09_rbac-analyste-lecture-seule.png,CAP-09,Admin/analyst/supervision segmentation
+SCENE-07,Kilyan FELIX,Annexes_Captures/CAP-07_dashboard-technique.png,CAP-07,"Severity, sources, top rules"
+SCENE-08,Kilyan FELIX,Dashboards_Offline/daylight_soc_dashboard.html,21_DASHBOARDS_ALERTES_QUALIFICATION.md,"SLA, escalation, alert qualification"
+SCENE-09,Mahamadou DIACOUMBA,22_EXPLOITATION_VM_RUNBOOK_REX.md,22_EXPLOITATION_VM_RUNBOOK_REX.md,VM/container restart and preflight
+SCENE-10,Mahamadou DIACOUMBA,03_PLAYBOOKS_PROCEDURES_REX.md,03_PLAYBOOKS_PROCEDURES_REX.md,Incident handling and lessons learned
+SCENE-11,Yvan FOCSA,01_RAPPORT_TECHNIQUE_GROUPE.md,01_RAPPORT_TECHNIQUE_GROUPE.md,"Industrialization, costs, pilot phase"
+SCENE-12,Equipe Cyber Trust,11_CHECKLIST_DEPOT_FINAL.md,11_CHECKLIST_DEPOT_FINAL.md,"Remaining proofs, final ZIP, conclusion"

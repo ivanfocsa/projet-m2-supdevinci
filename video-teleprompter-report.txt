@@ -1,0 +1,5 @@
+=== Teleprompteur video Daylight / Cyber Trust ===
+HTML : C:\Users\Ivan\Pictures\PROJET M2\Dashboards_Offline\daylight_video_teleprompter.html
+Segments : 12
+Checklist : 14 items
+Usage : ouvrir le HTML pendant l'enregistrement de la video 15-20 minutes.

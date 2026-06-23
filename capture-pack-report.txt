@@ -1,0 +1,13 @@
+=== Controle captures Daylight / Cyber Trust ===
+Dossier captures : C:\Users\Ivan\Pictures\PROJET M2\Annexes_Captures
+Checklist        : C:\Users\Ivan\Pictures\PROJET M2\config\captures\daylight_capture_checklist.csv
+Captures detectees CAP-*.png : 27
+Captures prioritaires presentes : 8/8
+
+## Captures prioritaires
+[OK] Toutes les captures prioritaires sont presentes.
+
+## Captures optionnelles encore absentes
+- CAP-26_docker-conteneurs-lab.png | Mahamadou | Containers
+
+[OK] Pack captures prioritaire pret.

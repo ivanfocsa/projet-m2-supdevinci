@@ -1,0 +1,14 @@
+=== Controle video Daylight / Cyber Trust ===
+Fichier lien : C:\Users\Ivan\Pictures\PROJET M2\PE_2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_video-lien.txt
+Lien YouTube : WARN - aucune URL http/https trouvee
+MP4 final    : WARN - aucun MP4 final detecte
+Shotlist     : OK - C:\Users\Ivan\Pictures\PROJET M2\config\video\daylight_video_shotlist.csv
+Checklist    : OK - C:\Users\Ivan\Pictures\PROJET M2\config\video\daylight_video_recording_checklist.csv
+Description  : OK - C:\Users\Ivan\Pictures\PROJET M2\config\video\youtube_description_daylight.txt
+
+[WARN] Video non prete pour depot.
+Actions restantes :
+- enregistrer la video 15-20 minutes avec les 4 membres ;
+- publier en YouTube non repertorie puis coller l'URL dans le fichier lien ;
+- ou deposer un MP4 final avec la nomenclature attendue ;
+- relancer tools/post_capture_finalize.ps1.

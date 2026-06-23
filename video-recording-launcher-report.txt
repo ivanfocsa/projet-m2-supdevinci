@@ -1,0 +1,38 @@
+﻿=== Lanceur session enregistrement video - Daylight / Cyber Trust ===
+Racine : C:\Users\Ivan\Pictures\PROJET M2
+Date   : 2026-06-23 19:59:15
+Mode   : NoOpen=True ; OpenAll=False ; OpenCoreOnly=False
+
+## Ordre d'ouverture
+[OK] 1. Centre controle demo - C:\Users\Ivan\Pictures\PROJET M2\Dashboards_Offline\daylight_demo_control_center.html
+     Usage : Point d'entree vers toutes les preuves
+[OK] 2. Teleprompteur video - C:\Users\Ivan\Pictures\PROJET M2\Dashboards_Offline\daylight_video_teleprompter.html
+     Usage : Texte court par intervenant
+[OK] 3. Pack enregistrement video - C:\Users\Ivan\Pictures\PROJET M2\Dashboards_Offline\daylight_video_recording_pack.html
+     Usage : Scenes minute par minute et checklist
+[OK] 4. Runbook immediat - C:\Users\Ivan\Pictures\PROJET M2\Rendus_PDF\33_RUNBOOK_ENREGISTREMENT_VIDEO_IMMEDIAT.pdf
+     Usage : Procedure de tournage finale
+[OK] 5. Presentation PowerPoint - C:\Users\Ivan\Pictures\PROJET M2\Presentation_Daylight_CyberTrust.pptx
+     Usage : Introduction et fil conducteur
+[OK] 6. Revue firewall pfSense - C:\Users\Ivan\Pictures\PROJET M2\Dashboards_Offline\daylight_pfsense_firewall_review.html
+     Usage : Preuve firewall concrete Yvan
+[OK] 7. Dashboard SOC offline - C:\Users\Ivan\Pictures\PROJET M2\Dashboards_Offline\daylight_soc_dashboard.html
+     Usage : Preuve dashboards et qualification
+[OK] 8. Preflight CAP-25 - C:\Users\Ivan\Pictures\PROJET M2\Annexes_Captures\CAP-25_preflight-demo-ok.png
+     Usage : Preuve Docker et Wazuh OK
+[OK] 9. Description YouTube - C:\Users\Ivan\Pictures\PROJET M2\config\video\youtube_description_daylight.txt
+     Usage : Texte a coller lors de la publication
+[OK] 10. Fichier lien video - C:\Users\Ivan\Pictures\PROJET M2\PE_2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_video-lien.txt
+     Usage : Destination URL YouTube non repertoriee
+
+## Actions conseillees
+1. Lancer OBS/Teams et verifier le micro.
+2. Ouvrir les supports ci-dessus dans l'ordre.
+3. Enregistrer 15 a 20 minutes avec les 4 membres.
+4. Publier YouTube non repertorie ou deposer le MP4 final.
+5. Coller l'URL dans PE_2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_video-lien.txt.
+6. Relancer tools\post_capture_finalize.ps1 -AllowWarnings.
+
+[OK] Tous les supports d'enregistrement attendus sont presents.
+
+[INFO] Aucun fichier ouvert. Relancer avec -OpenCoreOnly ou -OpenAll pour ouvrir les supports.

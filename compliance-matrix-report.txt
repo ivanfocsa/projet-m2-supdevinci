@@ -1,0 +1,8 @@
+=== Matrice conformite Daylight / Cyber Trust ===
+Generation : 2026-06-23 19:59:15
+CSV : C:\Users\Ivan\Pictures\PROJET M2\config\compliance\daylight_compliance_matrix.csv
+HTML : C:\Users\Ivan\Pictures\PROJET M2\Dashboards_Offline\daylight_compliance_matrix.html
+Markdown : C:\Users\Ivan\Pictures\PROJET M2\32_MATRICE_CONFORMITE_CAHIER_DES_CHARGES.md
+Exigences : 17
+OK : 16
+A_FINALISER : 1

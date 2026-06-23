@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Daylight / Cyber Trust - Pack enregistrement video</title>
+<style>
+:root {
+  --ink:#182230;
+  --muted:#667085;
+  --line:#d0d5dd;
+  --bg:#f6f7fb;
+  --paper:#fff;
+  --green:#067647;
+  --red:#b42318;
+  --blue:#184e77;
+}
+* { box-sizing:border-box; }
+body { margin:0; font-family:Arial, sans-serif; background:var(--bg); color:var(--ink); }
+header { background:#172033; color:white; padding:26px 34px; border-bottom:4px solid #22a699; }
+header h1 { margin:0; font-size:28px; letter-spacing:0; }
+header p { margin:8px 0 0; color:#d7e3f4; max-width:1060px; line-height:1.45; }
+main { padding:24px 34px 42px; }
+section { background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:18px; margin-top:16px; overflow-x:auto; }
+h2 { margin:0 0 12px; font-size:20px; }
+table { width:100%; border-collapse:collapse; font-size:14px; }
+th, td { border-bottom:1px solid #e4e7ec; padding:9px; text-align:left; vertical-align:top; }
+th { background:#eef2f7; color:#344054; }
+code { background:#f2f4f7; border:1px solid #e4e7ec; border-radius:5px; padding:2px 5px; }
+span { color:var(--muted); }
+pre { white-space:pre-wrap; background:#111827; color:#f9fafb; border-radius:8px; padding:14px; line-height:1.45; }
+.grid { display:grid; grid-template-columns:repeat(4, 1fr); gap:12px; }
+.step { border:1px solid #d8dee9; border-radius:8px; background:#fbfcff; padding:12px; min-height:96px; }
+.step b { display:block; margin-bottom:7px; }
+.pill { display:inline-block; border-radius:999px; padding:4px 9px; font-size:12px; font-weight:700; }
+.ok { background:#ecfdf3; color:var(--green); }
+.warn { background:#fff1f0; color:var(--red); }
+@media (max-width: 1050px) { .grid { grid-template-columns:1fr; } main, header { padding-left:18px; padding-right:18px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Daylight / Cyber Trust - Pack enregistrement video</h1>
+  <p>Regie concrete pour enregistrer la video 15-20 minutes : scenes, intervenants, overlays, fichiers a ouvrir et controles apres export. Genere le 2026-06-23 19:59:15.</p>
+</header>
+<main>
+  <section>
+    <h2>Mode operatoire ultra-court</h2>
+    <div class="grid">
+      <div class="step"><b>1. Ouvrir</b>PowerPoint, centre de controle, revue pfSense, dashboard SOC, teleprompteur.</div>
+      <div class="step"><b>2. Enregistrer</b>Un partage ecran lisible, micro clair, overlay nom/role visible a chaque prise de parole.</div>
+      <div class="step"><b>3. Exporter</b>MP4 ou YouTube non repertorie. La video doit durer entre 15 et 20 minutes.</div>
+      <div class="step"><b>4. Finaliser</b>Importer le lien/MP4 puis relancer validation, ZIP et hash.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Scenes a creer dans OBS ou a suivre en partage ecran</h2>
+    <table>
+      <thead><tr><th>Scene</th><th>Intervenant</th><th>Ecran/fichier</th><th>Overlay</th><th>Message</th><th>Etat source</th></tr></thead>
+      <tbody><tr><td><code>SCENE-01</code><br>00:00-01:30</td><td><b>Kilyan FELIX</b><br><span>Chef de projet SOC / detection, alertes, dashboards, qualification</span></td><td>Presentation intro<br><code>Presentation/Presentation_Daylight_CyberTrust.pptx</code></td><td><code>overlay_kilyan_felix.png</code><br>OK</td><td>Daylight, Cyber Trust, objective, team roles</td><td><span class="pill warn">a verifier</span></td></tr>
+<tr><td><code>SCENE-02</code><br>01:30-02:30</td><td><b>Yvan FOCSA</b><br><span>Architecte solution / pfSense, segmentation, architecture</span></td><td>Architecture group report<br><code>Annexes_Captures/CAP-12_architecture-solution.png</code></td><td><code>overlay_yvan_focsa.png</code><br>OK</td><td>SOC externalise, Wazuh, sources, target architecture</td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><code>SCENE-03</code><br>02:30-04:00</td><td><b>Yvan FOCSA</b><br><span>Architecte solution / pfSense, segmentation, architecture</span></td><td>Revue firewall pfSense<br><code>Dashboards_Offline/daylight_pfsense_firewall_review.html</code></td><td><code>overlay_yvan_focsa.png</code><br>OK</td><td>Segmentation, regles firewall, NAT, tests pfSense, syslog Wazuh</td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><code>SCENE-04</code><br>04:00-05:30</td><td><b>Youssef GUERNIOU</b><br><span>Ingenieur SIEM / Wazuh, agents, regles, RBAC</span></td><td>Wazuh dashboard<br><code>Annexes_Captures/CAP-01_wazuh-dashboard-login.png</code></td><td><code>overlay_youssef_guerniou.png</code><br>OK</td><td>Agents and SIEM access</td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><code>SCENE-05</code><br>05:30-07:00</td><td><b>Youssef GUERNIOU</b><br><span>Ingenieur SIEM / Wazuh, agents, regles, RBAC</span></td><td>Wazuh alerts<br><code>Annexes_Captures/CAP-03_alerte-5712-brute-force-ssh.png</code></td><td><code>overlay_youssef_guerniou.png</code><br>OK</td><td>5712 and Daylight custom rules</td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><code>SCENE-06</code><br>07:00-08:30</td><td><b>Youssef GUERNIOU</b><br><span>Ingenieur SIEM / Wazuh, agents, regles, RBAC</span></td><td>RBAC view<br><code>Annexes_Captures/CAP-09_rbac-analyste-lecture-seule.png</code></td><td><code>overlay_youssef_guerniou.png</code><br>OK</td><td>Admin/analyst/supervision segmentation</td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><code>SCENE-07</code><br>08:30-10:00</td><td><b>Kilyan FELIX</b><br><span>Chef de projet SOC / detection, alertes, dashboards, qualification</span></td><td>Technical dashboard<br><code>Annexes_Captures/CAP-07_dashboard-technique.png</code></td><td><code>overlay_kilyan_felix.png</code><br>OK</td><td>Severity, sources, top rules</td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><code>SCENE-08</code><br>10:00-11:30</td><td><b>Kilyan FELIX</b><br><span>Chef de projet SOC / detection, alertes, dashboards, qualification</span></td><td>Qualification matrix<br><code>Dashboards_Offline/daylight_soc_dashboard.html</code></td><td><code>overlay_kilyan_felix.png</code><br>OK</td><td>SLA, escalation, alert qualification</td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><code>SCENE-09</code><br>11:30-13:00</td><td><b>Mahamadou DIACOUMBA</b><br><span>Exploitation lab / VM, playbooks, procedures, REX</span></td><td>Runbook lab<br><code>22_EXPLOITATION_VM_RUNBOOK_REX.md</code></td><td><code>overlay_mahamadou_diacoumba.png</code><br>OK</td><td>VM/container restart and preflight</td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><code>SCENE-10</code><br>13:00-14:30</td><td><b>Mahamadou DIACOUMBA</b><br><span>Exploitation lab / VM, playbooks, procedures, REX</span></td><td>REX/playbook<br><code>03_PLAYBOOKS_PROCEDURES_REX.md</code></td><td><code>overlay_mahamadou_diacoumba.png</code><br>OK</td><td>Incident handling and lessons learned</td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><code>SCENE-11</code><br>14:30-16:00</td><td><b>Yvan FOCSA</b><br><span>Architecte solution / pfSense, segmentation, architecture</span></td><td>Costs and limits<br><code>01_RAPPORT_TECHNIQUE_GROUPE.md</code></td><td><code>overlay_yvan_focsa.png</code><br>OK</td><td>Industrialization, costs, pilot phase</td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><code>SCENE-12</code><br>16:00-17:00</td><td><b>Equipe Cyber Trust</b><br><span>Conclusion, depot final et prochaines etapes Daylight</span></td><td>Final checklist<br><code>11_CHECKLIST_DEPOT_FINAL.md</code></td><td><code>overlay_equipe_cyber_trust.png</code><br>OK</td><td>Remaining proofs, final ZIP, conclusion</td><td><span class="pill ok">pret</span></td></tr></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Commandes apres enregistrement</h2>
+    <pre># Option lien YouTube non repertorie
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\tools\import_final_evidence.ps1 -Item VIDEO-LINK -YoutubeUrl "https://youtu.be/xxxx" -RunChecks
+
+# Option MP4 local
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\tools\import_final_evidence.ps1 -Item VIDEO-MP4 -SourcePath "C:\chemin\vers\video.mp4" -RunChecks
+
+# Reconstruction finale
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\tools\post_capture_finalize.ps1 -AllowWarnings</pre>
+  </section>
+
+  <section>
+    <h2>Checklist enregistrement</h2>
+    <table><thead><tr><th>Phase</th><th>Item</th><th>Owner</th><th>Preuve attendue</th></tr></thead><tbody>
+    <tr><td>Avant</td><td>Verifier micro et partage ecran</td><td>Kilyan</td><td>Test audio et capture lisible</td></tr>
+<tr><td>Avant</td><td>Ouvrir PowerPoint et docs principaux</td><td>Kilyan</td><td>Slides pretes</td></tr>
+<tr><td>Avant</td><td>Ouvrir architecture, revue firewall pfSense et plan tests</td><td>Yvan</td><td>CAP-12, CAP-13, revue HTML pfSense et pfsense_demo_test_plan prets</td></tr>
+<tr><td>Avant</td><td>Ouvrir Wazuh ou dashboard offline</td><td>Youssef</td><td>CAP-01/02/03 ou HTML offline</td></tr>
+<tr><td>Avant</td><td>Ouvrir playbooks/runbook</td><td>Mahamadou</td><td>Docs 03 et 22 prets</td></tr>
+<tr><td>Pendant</td><td>Afficher le nom de chaque intervenant</td><td>Equipe</td><td>Nom visible pendant chaque sequence</td></tr>
+<tr><td>Pendant</td><td>Respecter 15 a 20 minutes</td><td>Equipe</td><td>Chronometre actif</td></tr>
+<tr><td>Pendant</td><td>Montrer dashboards technique/executif</td><td>Kilyan</td><td>CAP-07 et CAP-08 visibles</td></tr>
+<tr><td>Pendant</td><td>Montrer alerte patient 100120</td><td>Kilyan</td><td>CAP-06 visible</td></tr>
+<tr><td>Pendant</td><td>Montrer preflight/runbook</td><td>Mahamadou</td><td>preflight ou doc 25 visible</td></tr>
+<tr><td>Apres</td><td>Exporter MP4 ou publier YouTube non repertorie</td><td>Equipe</td><td>Lien ou MP4 final</td></tr>
+<tr><td>Apres</td><td>Coller le lien dans le fichier video</td><td>Equipe</td><td>TXT sans placeholder</td></tr>
+<tr><td>Apres</td><td>Lancer check_video_ready.py</td><td>Equipe</td><td>video-readiness-report.txt OK</td></tr>
+<tr><td>Apres</td><td>Lancer finalize_project.ps1</td><td>Equipe</td><td>ZIP final reconstruit</td></tr>
+    </tbody></table>
+  </section>
+</main>
+</body>
+</html>

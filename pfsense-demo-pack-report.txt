@@ -1,0 +1,12 @@
+=== Pack demo pfSense Daylight / Cyber Trust ===
+Generation : 2026-06-23 19:59:15
+HTML : C:\Users\Ivan\Pictures\PROJET M2\Dashboards_Offline\daylight_pfsense_firewall_review.html
+Guide import : C:\Users\Ivan\Pictures\PROJET M2\config\pfsense\README_IMPORT_PFSENSE_DAYLIGHT.md
+Plan tests : C:\Users\Ivan\Pictures\PROJET M2\config\pfsense\pfsense_demo_test_plan.csv
+Regles firewall : 25
+Aliases : 14
+NAT : 2
+Topologie : 11
+Tests : 6
+
+A montrer : ouvrir Dashboards_Offline/daylight_pfsense_firewall_review.html puis derouler pfsense_demo_test_plan.csv.

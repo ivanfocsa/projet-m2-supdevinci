@@ -1,0 +1,14 @@
+dashboard,widget,type,query,split_field,metric,owner
+Technique SOC,Alertes par severite,bar,"rule.level >= 7",rule.level,count,Kilyan
+Technique SOC,Top regles declenchees,table,"rule.id:*","rule.id;rule.description",count,Kilyan
+Technique SOC,Alertes par source,pie,"agent.name:* OR data.srcip:*",agent.name,count,Kilyan
+Technique SOC,Timeline critiques,line,"rule.level >= 12",@timestamp,count,Kilyan
+Technique SOC,Evenements metier Daylight,table,"rule.id:(100110 OR 100120 OR 100130 OR 100140 OR 100150)",rule.id,count,Kilyan
+Technique SOC,Evenements pfSense,table,"rule.id:(110010 OR 110020 OR 110030 OR 110040 OR 110050)",rule.id,count,Kilyan
+Executif Daylight,Total alertes,metric,"rule.level >= 3",,count,Kilyan
+Executif Daylight,Alertes critiques,metric,"rule.level >= 12",,count,Kilyan
+Executif Daylight,Alertes donnees patients,metric,"rule.id:100120",,count,Kilyan
+Executif Daylight,Tentatives reseau bloquees,metric,"rule.id:(110010 OR 110020)",,count,Kilyan
+Executif Daylight,Tendance 24h,line,"rule.level >= 7",@timestamp,count,Kilyan
+Firewall Daylight,Scan WAN bloque,table,"rule.id:110010 OR full_log:*filterlog* AND full_log:*interface=WAN*",data.srcip,count,Yvan/Kilyan
+Firewall Daylight,Mouvement inter-VLAN,table,"rule.id:110020 OR full_log:*dst_zone=MGMT* OR full_log:*dst_zone=SERVERS*",data.srcip,count,Yvan/Kilyan

@@ -1,0 +1,4 @@
+=== Preuve preflight Daylight / Cyber Trust ===
+Rapport source : C:\Users\Ivan\Pictures\PROJET M2\preflight-demo-report.txt
+Image generee : C:\Users\Ivan\Pictures\PROJET M2\Annexes_Captures\CAP-25_preflight-demo-ok.png
+CAP-25 valide : oui
