@@ -1,0 +1,4 @@
+2026-06-23T09:22:05+02:00 daylight-app-01 DAYLIGHT_APP event=auth_failure user=alice.martin src=10.10.10.54 count=7 result=blocked
+2026-06-23T09:24:11+02:00 daylight-app-01 DAYLIGHT_APP event=patient_record_access user=stagiaire.demo patient_id=DL-PT-88421 center=Lyon risk=high reason="access outside role"
+2026-06-23T09:25:42+02:00 daylight-app-01 DAYLIGHT_APP event=appointment_export user=claire.bernard count=42 center=Nantes risk=medium
+2026-06-23T09:28:03+02:00 daylight-app-01 DAYLIGHT_APP event=auth_success user=youssef.guerniou src=10.10.40.21 role=soc_admin

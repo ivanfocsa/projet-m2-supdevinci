@@ -1,0 +1,2 @@
+2026-06-23T09:40:27+02:00 daylight-mail-01 DAYLIGHT_MAIL event=phishing_reported user=accueil.lyon sender=billing-update@example.net subject="Facture mutuelle urgente" attachment=invoice.html risk=high
+2026-06-23T09:41:52+02:00 daylight-mail-01 DAYLIGHT_MAIL event=url_rewrite_click user=accueil.lyon url=http://example.net/login verdict=blocked risk=medium

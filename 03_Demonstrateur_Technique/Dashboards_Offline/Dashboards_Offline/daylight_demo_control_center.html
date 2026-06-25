@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Daylight / Cyber Trust - Centre de controle demo</title>
+<style>
+:root {
+  --ink:#182230;
+  --muted:#667085;
+  --line:#d0d5dd;
+  --paper:#ffffff;
+  --bg:#f6f7fb;
+  --blue:#1d4e89;
+  --green:#067647;
+  --red:#b42318;
+  --amber:#b54708;
+}
+* { box-sizing:border-box; }
+body { margin:0; font-family:Arial, sans-serif; color:var(--ink); background:var(--bg); }
+header { background:#182230; color:white; padding:24px 34px; border-bottom:4px solid #22a699; }
+header h1 { margin:0; font-size:28px; letter-spacing:0; }
+header p { margin:8px 0 0; color:#d7e3f4; max-width:980px; line-height:1.45; }
+main { padding:24px 34px 40px; }
+.summary { display:grid; grid-template-columns:repeat(5, minmax(130px, 1fr)); gap:12px; margin-bottom:16px; }
+.metric, section { background:var(--paper); border:1px solid var(--line); border-radius:8px; }
+.metric { padding:14px; min-height:96px; }
+.metric span { color:var(--muted); font-size:13px; display:block; }
+.metric strong { display:block; margin-top:10px; font-size:30px; }
+section { padding:18px; margin-top:16px; }
+h2 { margin:0 0 12px; font-size:20px; }
+table { width:100%; border-collapse:collapse; font-size:14px; }
+th, td { border-bottom:1px solid #e4e7ec; padding:9px; text-align:left; vertical-align:top; }
+th { background:#eef2f7; color:#344054; }
+a { color:var(--blue); font-weight:700; text-decoration:none; }
+a:hover { text-decoration:underline; }
+code { background:#f2f4f7; border:1px solid #e4e7ec; border-radius:5px; padding:2px 5px; }
+pre { white-space:pre-wrap; background:#111827; color:#f9fafb; border-radius:8px; padding:14px; line-height:1.45; }
+.pill { display:inline-block; border-radius:999px; padding:4px 9px; font-size:12px; font-weight:700; }
+.ok { background:#ecfdf3; color:var(--green); }
+.warn { background:#fff1f0; color:var(--red); }
+.info { background:#eef4ff; color:var(--blue); }
+.missing { color:var(--red); font-weight:700; }
+.two { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.note { color:var(--muted); line-height:1.45; }
+@media (max-width: 980px) { .summary, .two { grid-template-columns:1fr; } main, header { padding-left:18px; padding-right:18px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Daylight / Cyber Trust - Centre de controle demo</h1>
+  <p>Point unique pour lancer la soutenance, ouvrir les preuves concretes, suivre les captures restantes et retrouver les commandes de finalisation.</p>
+</header>
+<main>
+  <div class="summary">
+    <div class="metric"><span>Captures prioritaires</span><strong>8/8</strong></div>
+    <div class="metric"><span>Video</span><strong>A faire</strong></div>
+    <div class="metric"><span>PDF</span><strong>40</strong></div>
+    <div class="metric"><span>ZIP</span><strong>OK</strong></div>
+    <div class="metric"><span>Etat depot</span><strong>Partiel</strong></div>
+  </div>
+
+  <section>
+    <h2>Decision rapide</h2>
+    <p><span class="pill warn">a completer</span> Lien YouTube non repertorie ou MP4 final a ajouter</p>
+    <p class="note">Docker : [OK]   Docker daemon - repond<br>Wazuh : [OK]   https://localhost - repond avec statut 200 via Python TLS lab</p>
+  </section>
+
+  <section>
+    <h2>Ouvrir les supports a montrer</h2>
+    <table><thead><tr><th>Support</th><th>Fichier</th><th>Etat</th></tr></thead><tbody>
+    <tr><td><a href="../Dashboards_Offline/daylight_video_teleprompter.html">Teleprompteur video</a></td><td><code>Dashboards_Offline/daylight_video_teleprompter.html</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../Dashboards_Offline/daylight_video_overlays.html">Overlays nom/role video</a></td><td><code>Dashboards_Offline/daylight_video_overlays.html</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../Dashboards_Offline/daylight_video_recording_pack.html">Pack enregistrement video</a></td><td><code>Dashboards_Offline/daylight_video_recording_pack.html</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../config/video/daylight_video_obs_scenes.csv">Scenes OBS video</a></td><td><code>config/video/daylight_video_obs_scenes.csv</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../Video_Overlays/README_VIDEO_OVERLAYS.md">README overlays video</a></td><td><code>Video_Overlays/README_VIDEO_OVERLAYS.md</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../Dashboards_Offline/daylight_pfsense_firewall_review.html">Revue firewall pfSense</a></td><td><code>Dashboards_Offline/daylight_pfsense_firewall_review.html</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../config/pfsense/README_IMPORT_PFSENSE_DAYLIGHT.md">Guide import pfSense</a></td><td><code>config/pfsense/README_IMPORT_PFSENSE_DAYLIGHT.md</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../config/pfsense/pfsense_demo_test_plan.csv">Plan tests pfSense</a></td><td><code>config/pfsense/pfsense_demo_test_plan.csv</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../Dashboards_Offline/daylight_jury_defense_pack.html">Pack defense jury</a></td><td><code>Dashboards_Offline/daylight_jury_defense_pack.html</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../Dashboards_Offline/daylight_compliance_matrix.html">Matrice conformite</a></td><td><code>Dashboards_Offline/daylight_compliance_matrix.html</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../config/compliance/daylight_compliance_matrix.csv">CSV conformite</a></td><td><code>config/compliance/daylight_compliance_matrix.csv</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../config/video/daylight_jury_response_cards.csv">Cartes reponses jury</a></td><td><code>config/video/daylight_jury_response_cards.csv</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../Dashboards_Offline/daylight_soc_dashboard.html">Dashboard SOC offline</a></td><td><code>Dashboards_Offline/daylight_soc_dashboard.html</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../Dashboards_Offline/daylight_final_evidence_status.html">Dashboard statut preuves</a></td><td><code>Dashboards_Offline/daylight_final_evidence_status.html</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../lab-cap25-recovery-report.txt">Rapport relance CAP-25</a></td><td><code>lab-cap25-recovery-report.txt</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../Rendus_PDF/PE-2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_RapportGroupe.pdf">Rapport groupe PDF</a></td><td><code>Rendus_PDF/PE-2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_RapportGroupe.pdf</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../Rendus_PDF/PE-2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_DossierGroupeComplet.pdf">Dossier groupe complet PDF</a></td><td><code>Rendus_PDF/PE-2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_DossierGroupeComplet.pdf</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../Presentation_Daylight_CyberTrust.pptx">Presentation PowerPoint</a></td><td><code>Presentation_Daylight_CyberTrust.pptx</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../config/pfsense/pfsense_firewall_rules.csv">Matrice pfSense</a></td><td><code>config/pfsense/pfsense_firewall_rules.csv</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../config/wazuh/local_rules_daylight_pfsense.xml">Regles Wazuh custom</a></td><td><code>config/wazuh/local_rules_daylight_pfsense.xml</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../config/wazuh/daylight_alert_qualification_matrix.csv">Matrice qualification alertes</a></td><td><code>config/wazuh/daylight_alert_qualification_matrix.csv</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../config/lab/daylight_lab_runbook.csv">Runbook lab VM</a></td><td><code>config/lab/daylight_lab_runbook.csv</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../Demo_Logs/pfsense.log">Logs pfSense demo</a></td><td><code>Demo_Logs/pfsense.log</code></td><td><span class="pill ok">pret</span></td></tr>
+<tr><td><a href="../Demo_Logs/daylight_app.log">Logs applicatifs demo</a></td><td><code>Demo_Logs/daylight_app.log</code></td><td><span class="pill ok">pret</span></td></tr>
+    </tbody></table>
+  </section>
+
+  <section>
+    <h2>Captures prioritaires et preuves concretes</h2>
+    <table><thead><tr><th>ID</th><th>Fichier</th><th>Responsable</th><th>Preuve</th><th>Etat</th></tr></thead><tbody>
+    <tr><td>CAP-01</td><td><a href="../Annexes_Captures/CAP-01_wazuh-dashboard-login.png">CAP-01_wazuh-dashboard-login.png</a></td><td>Youssef</td><td>Wazuh accessible</td><td><span class="pill ok">presente</span></td></tr>
+<tr><td>CAP-02</td><td><a href="../Annexes_Captures/CAP-02_agents-poste01-serveur01.png">CAP-02_agents-poste01-serveur01.png</a></td><td>Youssef</td><td>Collecte multi-source</td><td><span class="pill ok">presente</span></td></tr>
+<tr><td>CAP-03</td><td><a href="../Annexes_Captures/CAP-03_alerte-5712-brute-force-ssh.png">CAP-03_alerte-5712-brute-force-ssh.png</a></td><td>Youssef</td><td>Detection brute force SSH</td><td><span class="pill ok">presente</span></td></tr>
+<tr><td>CAP-06</td><td><a href="../Annexes_Captures/CAP-06_alerte-100120-acces-patient.png">CAP-06_alerte-100120-acces-patient.png</a></td><td>Kilyan</td><td>Patient data protection</td><td><span class="pill ok">presente</span></td></tr>
+<tr><td>CAP-07</td><td><a href="../Annexes_Captures/CAP-07_dashboard-technique.png">CAP-07_dashboard-technique.png</a></td><td>Kilyan</td><td>Dashboard analyste</td><td><span class="pill ok">presente</span></td></tr>
+<tr><td>CAP-08</td><td><a href="../Annexes_Captures/CAP-08_dashboard-executif.png">CAP-08_dashboard-executif.png</a></td><td>Kilyan</td><td>Dashboard client</td><td><span class="pill ok">presente</span></td></tr>
+<tr><td>CAP-13</td><td><a href="../Annexes_Captures/CAP-13_pfsense-regles-firewall.png">CAP-13_pfsense-regles-firewall.png</a></td><td>Yvan</td><td>Firewall/routeur concret</td><td><span class="pill ok">presente</span></td></tr>
+<tr><td>CAP-25</td><td><a href="../Annexes_Captures/CAP-25_preflight-demo-ok.png">CAP-25_preflight-demo-ok.png</a></td><td>Mahamadou</td><td>Lab exploitation</td><td><span class="pill ok">presente</span></td></tr>
+    </tbody></table>
+  </section>
+
+  <section>
+    <h2>Deroule video 15-20 minutes</h2>
+    <table><thead><tr><th>Timing</th><th>Intervenant</th><th>Ecran</th><th>Preuve</th><th>Message</th></tr></thead><tbody>
+    <tr><td>00:00-01:30</td><td>Kilyan</td><td>Presentation intro</td><td><a href="../Presentation_Daylight_CyberTrust.pptx">Presentation_Daylight_CyberTrust.pptx</a></td><td>Daylight, Cyber Trust, objective, team roles</td></tr>
+<tr><td>01:30-02:30</td><td>Yvan</td><td>Architecture group report</td><td><a href="../01_RAPPORT_TECHNIQUE_GROUPE.md">01_RAPPORT_TECHNIQUE_GROUPE.md</a></td><td>SOC externalise, Wazuh, sources, target architecture</td></tr>
+<tr><td>02:30-04:00</td><td>Yvan</td><td>Revue firewall pfSense</td><td>Dashboards_Offline / daylight_pfsense_firewall_review.html / config / pfsense / pfsense_demo_test_plan.csv</td><td>Segmentation, regles firewall, NAT, tests pfSense, syslog Wazuh</td></tr>
+<tr><td>04:00-05:30</td><td>Youssef</td><td>Wazuh dashboard</td><td><a href="../Annexes_Captures/CAP-01_wazuh-dashboard-login.png">CAP-01</a> / <a href="../Annexes_Captures/CAP-02_agents-poste01-serveur01.png">CAP-02</a></td><td>Agents and SIEM access</td></tr>
+<tr><td>05:30-07:00</td><td>Youssef</td><td>Wazuh alerts</td><td><a href="../Annexes_Captures/CAP-03_alerte-5712-brute-force-ssh.png">CAP-03</a> / <a href="../Annexes_Captures/CAP-05_daylight-alertes-metier.png">CAP-05</a></td><td>5712 and Daylight custom rules</td></tr>
+<tr><td>07:00-08:30</td><td>Youssef</td><td>RBAC view</td><td><a href="../Annexes_Captures/CAP-09_rbac-analyste-lecture-seule.png">CAP-09</a></td><td>Admin/analyst/supervision segmentation</td></tr>
+<tr><td>08:30-10:00</td><td>Kilyan</td><td>Technical dashboard</td><td><a href="../Annexes_Captures/CAP-07_dashboard-technique.png">CAP-07</a></td><td>Severity, sources, top rules</td></tr>
+<tr><td>10:00-11:30</td><td>Kilyan</td><td>Qualification matrix</td><td><a href="../21_DASHBOARDS_ALERTES_QUALIFICATION.md">21_DASHBOARDS_ALERTES_QUALIFICATION.md</a></td><td>SLA, escalation, alert qualification</td></tr>
+<tr><td>11:30-13:00</td><td>Mahamadou</td><td>Runbook lab</td><td><a href="../22_EXPLOITATION_VM_RUNBOOK_REX.md">22_EXPLOITATION_VM_RUNBOOK_REX.md</a></td><td>VM/container restart and preflight</td></tr>
+<tr><td>13:00-14:30</td><td>Mahamadou</td><td>REX/playbook</td><td><a href="../03_PLAYBOOKS_PROCEDURES_REX.md">03_PLAYBOOKS_PROCEDURES_REX.md</a></td><td>Incident handling and lessons learned</td></tr>
+<tr><td>14:30-16:00</td><td>Yvan</td><td>Costs and limits</td><td><a href="../01_RAPPORT_TECHNIQUE_GROUPE.md">01_RAPPORT_TECHNIQUE_GROUPE.md</a></td><td>Industrialization, costs, pilot phase</td></tr>
+<tr><td>16:00-17:00</td><td>Equipe</td><td>Final checklist</td><td><a href="../11_CHECKLIST_DEPOT_FINAL.md">11_CHECKLIST_DEPOT_FINAL.md</a></td><td>Remaining proofs, final ZIP, conclusion</td></tr>
+    </tbody></table>
+  </section>
+
+  <div class="two">
+    <section>
+      <h2>Commandes jour J</h2>
+      <pre>C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\tools\repair_lab_and_capture_cap25.ps1 -WaitSeconds 30
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\tools\repair_lab_and_capture_cap25.ps1 -StartDockerDesktop -StartKnownContainers -WaitSeconds 180
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\tools\import_final_evidence.ps1 -Item VIDEO-LINK -YoutubeUrl &quot;https://youtu.be/xxxx&quot; -RunChecks
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\tools\repair_lab_and_capture_cap25.ps1 -RunYoussefSetup -StartKnownContainers -WaitSeconds 180
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\tools\post_capture_finalize.ps1 -AllowWarnings</pre>
+    </section>
+    <section>
+      <h2>Hash archive</h2>
+      <pre>﻿1a89dc5e01f263a03ebb54da7678e417b69394106185e19f8cbe68e692b6cd67  PE_2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA.zip</pre>
+      <p class="note">Le hash doit etre recalcule apres ajout de CAP-25 ou du lien video.</p>
+    </section>
+  </div>
+</main>
+</body>
+</html>

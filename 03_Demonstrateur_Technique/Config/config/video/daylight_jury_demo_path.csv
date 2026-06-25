@@ -1,0 +1,9 @@
+order,owner,open,message,fallback
+01,Kilyan FELIX,Presentation/Presentation_Daylight_CyberTrust.pptx,"Contexte Daylight, objectif Cyber Trust, roles de l'equipe.",06_SUPPORT_PRESENTATION.md
+02,Yvan FOCSA,Annexes_Captures/CAP-12_architecture-solution.png,"Architecture cible, segmentation et sources raccordees.",01_RAPPORT_TECHNIQUE_GROUPE.md
+03,Yvan FOCSA,Dashboards_Offline/daylight_pfsense_firewall_review.html,"pfSense concret : interfaces, NAT, regles, logs et tests.",Config_PfSense/pfsense_firewall_rules.csv
+04,Youssef GUERNIOU,Annexes_Captures/CAP-01_wazuh-dashboard-login.png,"Acces Wazuh, agents et preuves SIEM disponibles.",Preuves_SIEM_Youssef/Documentation_SIEM_Youssef_GUERNIOU.pdf
+05,Youssef GUERNIOU,Annexes_Captures/CAP-03_alerte-5712-brute-force-ssh.png,Detection brute force SSH et logique de regles.,Config_Wazuh/local_rules_daylight_pfsense.xml
+06,Kilyan FELIX,Dashboards_Offline/daylight_soc_dashboard.html,"Dashboard technique, dashboard executif et qualification.",21_DASHBOARDS_ALERTES_QUALIFICATION.md
+07,Mahamadou DIACOUMBA,03_PLAYBOOKS_PROCEDURES_REX.md,"Playbook, procedure, REX et exploitation VM/lab.",22_EXPLOITATION_VM_RUNBOOK_REX.md
+08,Equipe Cyber Trust,Dashboards_Offline/daylight_demo_control_center.html,"Etat final, preuves restantes, ZIP, hash, limites honnetes.",30_TABLEAU_BORD_STATUT_FINAL.md
