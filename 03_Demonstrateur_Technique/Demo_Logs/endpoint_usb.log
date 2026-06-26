@@ -1,2 +1,0 @@
-2026-06-23T09:45:01+02:00 poste-01 DAYLIGHT_ENDPOINT event=usb_insert user=stagiaire.demo device_id=USBSTOR-VID_0951 authorized=false risk=high
-2026-06-23T09:45:33+02:00 poste-01 DAYLIGHT_ENDPOINT event=process_start user=stagiaire.demo image=C:\Users\Public\invoice_viewer.exe signer=unknown risk=medium

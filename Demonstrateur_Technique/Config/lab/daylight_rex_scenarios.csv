@@ -1,0 +1,6 @@
+incident_id,rule_id,title,severity,source,root_cause_hypothesis,immediate_action,corrective_action,preventive_action,owner
+INC-DAYLIGHT-001,5712,Brute force SSH serveur-01,High,serveur-01,Password attack from external/internal source,Block source and check account,Enforce strong auth and review SSH exposure,Monitor repeated failures,Mahamadou
+INC-DAYLIGHT-002,100120,Acces anormal dossier patient,Critical,daylight-app-01,User outside role or compromised account,Suspend session and verify legitimacy,Review application RBAC,Monthly review of sensitive access,Kilyan/Mahamadou
+INC-DAYLIGHT-003,100130,Modification groupe privilegie,Critical,AD/files,Unauthorized privilege change,Rollback group change and preserve evidence,Tighten admin delegation,Alert on privileged group changes,Youssef/Mahamadou
+INC-DAYLIGHT-004,110020,Tentative inter-VLAN vers MGMT,Critical,pfsense-fw-01,Compromised workstation or misuse,Keep firewall block and investigate source,Endpoint cleanup or reimage,Block lateral movement and monitor,Mahamadou/Yvan
+INC-DAYLIGHT-005,100150,Phishing signale,High,mail,Credential theft attempt,Quarantine message and block IOC,Reset password if clicked,Awareness and mail filtering,Kilyan/Mahamadou

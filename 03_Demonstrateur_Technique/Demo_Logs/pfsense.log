@@ -1,5 +1,0 @@
-2026-06-23T09:14:02+02:00 pfsense-fw-01 filterlog: action=block interface=WAN src=45.155.205.12 src_zone=Internet dst=203.0.113.10 dst_zone=WAN proto=tcp dst_port=22 rule=20 msg="WAN scan blocked"
-2026-06-23T09:15:17+02:00 pfsense-fw-01 filterlog: action=block interface=USERS src=10.10.10.54 src_zone=USERS dst=10.10.40.12 dst_zone=MGMT proto=tcp dst_port=443 rule=130 msg="User VLAN to management denied"
-2026-06-23T09:16:41+02:00 pfsense-fw-01 filterlog: action=pass interface=WAN src=198.51.100.22 src_zone=Internet dst=10.10.30.20 dst_zone=DMZ proto=tcp dst_port=443 rule=40 msg="HTTPS to Daylight portal"
-2026-06-23T09:18:09+02:00 pfsense-fw-01 event=vpn_login user=yvan.focsa src=198.51.100.50 result=success mfa=true
-2026-06-23T09:20:32+02:00 pfsense-fw-01 filterlog: action=pass interface=SERVERS src=10.10.20.30 src_zone=SERVERS dst=91.199.212.40 dst_zone=Internet proto=tcp dst_port=443 bytes=84233121 tag=WAN_EXFIL_DEMO msg="High outbound transfer demo"

@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Daylight / Cyber Trust - Teleprompteur video</title>
+<style>
+:root { --ink:#172033; --muted:#667085; --line:#d0d5dd; --bg:#f7f9fc; --accent:#175cd3; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Arial, sans-serif; background:var(--bg); color:var(--ink); }
+header { position:sticky; top:0; z-index:3; padding:22px 34px; background:#172033; color:white; border-bottom:6px solid var(--accent); }
+header h1 { margin:0; font-size:28px; }
+header p { margin:8px 0 0; color:#d5e3ff; }
+main { display:grid; grid-template-columns:minmax(0, 1fr) 360px; gap:22px; padding:24px 34px 44px; }
+.segment { background:white; border:1px solid var(--line); border-radius:10px; padding:22px; margin-bottom:18px; }
+.time { color:var(--accent); font-weight:700; font-size:22px; }
+.speaker { display:inline-block; margin-top:8px; padding:7px 11px; border-radius:999px; background:#eef4ff; color:#1849a9; font-weight:700; }
+h2 { margin:14px 0 12px; font-size:24px; }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:12px 0 18px; }
+.grid div { border:1px solid #e4e7ec; border-radius:8px; padding:12px; background:#fcfcfd; }
+.grid span { display:block; color:var(--muted); font-size:13px; margin-bottom:5px; }
+.grid strong { font-size:16px; }
+.prompt { font-size:26px; line-height:1.35; margin:0; }
+aside { position:sticky; top:106px; align-self:start; background:white; border:1px solid var(--line); border-radius:10px; padding:18px; max-height:calc(100vh - 130px); overflow:auto; }
+aside h2 { font-size:19px; margin:0 0 12px; }
+ol, ul { padding-left:20px; }
+li { margin-bottom:11px; }
+li span { color:var(--muted); }
+code { background:#f2f4f7; border:1px solid #e4e7ec; border-radius:5px; padding:2px 5px; }
+.warning { background:#fff7ed; border:1px solid #fed7aa; border-radius:8px; padding:12px; margin:14px 0; }
+@media (max-width: 980px) { main { grid-template-columns:1fr; } aside { position:static; } .prompt { font-size:22px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Daylight / Cyber Trust - Teleprompteur video 15-20 min</h1>
+  <p>Genere le 2026-06-23 19:59:14. Afficher le nom de chaque intervenant a l'ecran pendant sa sequence.</p>
+</header>
+<main>
+<div>
+
+<section class="segment" data-start="00:00" data-end="01:30">
+  <div class="time">00:00 - 01:30</div>
+  <div class="speaker">Kilyan</div>
+  <h2>1. Daylight, Cyber Trust, objective, team roles</h2>
+  <div class="grid">
+    <div><span>Ecran</span><strong>Presentation intro</strong></div>
+    <div><span>Preuve</span><strong>Presentation_Daylight_CyberTrust.pptx</strong></div>
+  </div>
+  <p class="prompt">Bonjour, nous sommes Cyber Trust. Nous presentons le SOC externalise propose pour Daylight, reseau de centres d&#x27;audioprothesistes. L&#x27;objectif est de centraliser les evenements de securite, detecter les comportements suspects et fournir des procedures exploitables.</p>
+</section>
+
+
+<section class="segment" data-start="01:30" data-end="02:30">
+  <div class="time">01:30 - 02:30</div>
+  <div class="speaker">Yvan</div>
+  <h2>2. SOC externalise, Wazuh, sources, target architecture</h2>
+  <div class="grid">
+    <div><span>Ecran</span><strong>Architecture group report</strong></div>
+    <div><span>Preuve</span><strong>01_RAPPORT_TECHNIQUE_GROUPE.md</strong></div>
+  </div>
+  <p class="prompt">La solution repose sur Wazuh pour la supervision et pfSense pour la segmentation. Le demonstrateur couvre un endpoint, un serveur Linux simule, des logs applicatifs Daylight et une trajectoire cible multi-site.</p>
+</section>
+
+
+<section class="segment" data-start="02:30" data-end="04:00">
+  <div class="time">02:30 - 04:00</div>
+  <div class="speaker">Yvan</div>
+  <h2>3. Segmentation, regles firewall, NAT, tests pfSense, syslog Wazuh</h2>
+  <div class="grid">
+    <div><span>Ecran</span><strong>Revue firewall pfSense</strong></div>
+    <div><span>Preuve</span><strong>Dashboards_Offline/daylight_pfsense_firewall_review.html / config/pfsense/pfsense_demo_test_plan.csv</strong></div>
+  </div>
+  <p class="prompt">Ici nous montrons la revue pfSense : interfaces, aliases, flux autorises, flux bloques, NAT, plan de tests et envoi syslog vers Wazuh. C&#x27;est la partie concrete firewall/routeur demandee par le cahier des charges.</p>
+</section>
+
+
+<section class="segment" data-start="04:00" data-end="05:30">
+  <div class="time">04:00 - 05:30</div>
+  <div class="speaker">Youssef</div>
+  <h2>4. Agents and SIEM access</h2>
+  <div class="grid">
+    <div><span>Ecran</span><strong>Wazuh dashboard</strong></div>
+    <div><span>Preuve</span><strong>CAP-01/CAP-02</strong></div>
+  </div>
+  <p class="prompt">Je presente la partie SIEM. Wazuh est deploye en lab, les preuves montrent le dashboard et la collecte multi-source. Les captures viennent de la documentation SIEM et peuvent etre recapturees en live si le lab repond.</p>
+</section>
+
+
+<section class="segment" data-start="05:30" data-end="07:00">
+  <div class="time">05:30 - 07:00</div>
+  <div class="speaker">Youssef</div>
+  <h2>5. 5712 and Daylight custom rules</h2>
+  <div class="grid">
+    <div><span>Ecran</span><strong>Wazuh alerts</strong></div>
+    <div><span>Preuve</span><strong>CAP-03/CAP-05</strong></div>
+  </div>
+  <p class="prompt">Nous montrons maintenant les alertes : brute force SSH 5712, regles metier Daylight 100110 a 100140, et l&#x27;acces anormal aux dossiers patients 100120.</p>
+</section>
+
+
+<section class="segment" data-start="07:00" data-end="08:30">
+  <div class="time">07:00 - 08:30</div>
+  <div class="speaker">Youssef</div>
+  <h2>6. Admin/analyst/supervision segmentation</h2>
+  <div class="grid">
+    <div><span>Ecran</span><strong>RBAC view</strong></div>
+    <div><span>Preuve</span><strong>CAP-09</strong></div>
+  </div>
+  <p class="prompt">Le RBAC separe les profils : admin complet, analyste et supervision en lecture. Le role soc_readonly evite qu&#x27;un profil de supervision modifie la plateforme.</p>
+</section>
+
+
+<section class="segment" data-start="08:30" data-end="10:00">
+  <div class="time">08:30 - 10:00</div>
+  <div class="speaker">Kilyan</div>
+  <h2>7. Severity, sources, top rules</h2>
+  <div class="grid">
+    <div><span>Ecran</span><strong>Technical dashboard</strong></div>
+    <div><span>Preuve</span><strong>CAP-07</strong></div>
+  </div>
+  <p class="prompt">Le dashboard technique sert aux analystes : severite, source, top regles et details de qualification. L&#x27;objectif est d&#x27;aller vite vers la bonne priorite.</p>
+</section>
+
+
+<section class="segment" data-start="10:00" data-end="11:30">
+  <div class="time">10:00 - 11:30</div>
+  <div class="speaker">Kilyan</div>
+  <h2>8. SLA, escalation, alert qualification</h2>
+  <div class="grid">
+    <div><span>Ecran</span><strong>Qualification matrix</strong></div>
+    <div><span>Preuve</span><strong>21_DASHBOARDS_ALERTES_QUALIFICATION.md</strong></div>
+  </div>
+  <p class="prompt">La matrice de qualification associe chaque regle a une severite, un SLA de triage, des premieres verifications, une action immediate et une escalade.</p>
+</section>
+
+
+<section class="segment" data-start="11:30" data-end="13:00">
+  <div class="time">11:30 - 13:00</div>
+  <div class="speaker">Mahamadou</div>
+  <h2>9. VM/container restart and preflight</h2>
+  <div class="grid">
+    <div><span>Ecran</span><strong>Runbook lab</strong></div>
+    <div><span>Preuve</span><strong>22_EXPLOITATION_VM_RUNBOOK_REX.md</strong></div>
+  </div>
+  <p class="prompt">Mon role est de rendre le lab exploitable : relance Docker/Wazuh, serveur-01, preflight, verification des services et preuves de redemarrage.</p>
+</section>
+
+
+<section class="segment" data-start="13:00" data-end="14:30">
+  <div class="time">13:00 - 14:30</div>
+  <div class="speaker">Mahamadou</div>
+  <h2>10. Incident handling and lessons learned</h2>
+  <div class="grid">
+    <div><span>Ecran</span><strong>REX/playbook</strong></div>
+    <div><span>Preuve</span><strong>03_PLAYBOOKS_PROCEDURES_REX.md</strong></div>
+  </div>
+  <p class="prompt">Une alerte ne suffit pas : les playbooks disent quoi verifier, qui prevenir, quoi bloquer et comment produire le REX. Exemple : brute force SSH ou acces patient.</p>
+</section>
+
+
+<section class="segment" data-start="14:30" data-end="16:00">
+  <div class="time">14:30 - 16:00</div>
+  <div class="speaker">Yvan</div>
+  <h2>11. Industrialization, costs, pilot phase</h2>
+  <div class="grid">
+    <div><span>Ecran</span><strong>Costs and limits</strong></div>
+    <div><span>Preuve</span><strong>01_RAPPORT_TECHNIQUE_GROUPE.md</strong></div>
+  </div>
+  <p class="prompt">Pour industrialiser, Cyber Trust propose un pilote, puis une extension progressive aux sites Daylight, avec retention, supervision, couts d&#x27;infrastructure et amelioration continue.</p>
+</section>
+
+
+<section class="segment" data-start="16:00" data-end="17:00">
+  <div class="time">16:00 - 17:00</div>
+  <div class="speaker">Equipe</div>
+  <h2>12. Remaining proofs, final ZIP, conclusion</h2>
+  <div class="grid">
+    <div><span>Ecran</span><strong>Final checklist</strong></div>
+    <div><span>Preuve</span><strong>11_CHECKLIST_DEPOT_FINAL.md</strong></div>
+  </div>
+  <p class="prompt">Pour conclure, le demonstrateur couvre les attentes : SIEM open-source, collecte multi-source, alertes, dashboards, RBAC, playbooks, REX, documentation et ZIP final controle.</p>
+</section>
+
+</div>
+<aside>
+  <h2>Checklist rapide</h2>
+  <div class="warning"><b>Restes reels :</b> lien YouTube/MP4 final, et <code>CAP-25</code> seulement si Docker + Wazuh repondent.</div>
+  <ul>
+<li><b>Avant</b> - Verifier micro et partage ecran <em>Kilyan</em><br><span>Test audio et capture lisible</span></li>
+<li><b>Avant</b> - Ouvrir PowerPoint et docs principaux <em>Kilyan</em><br><span>Slides pretes</span></li>
+<li><b>Avant</b> - Ouvrir architecture, revue firewall pfSense et plan tests <em>Yvan</em><br><span>CAP-12, CAP-13, revue HTML pfSense et pfsense_demo_test_plan prets</span></li>
+<li><b>Avant</b> - Ouvrir Wazuh ou dashboard offline <em>Youssef</em><br><span>CAP-01/02/03 ou HTML offline</span></li>
+<li><b>Avant</b> - Ouvrir playbooks/runbook <em>Mahamadou</em><br><span>Docs 03 et 22 prets</span></li>
+<li><b>Pendant</b> - Afficher le nom de chaque intervenant <em>Equipe</em><br><span>Nom visible pendant chaque sequence</span></li>
+<li><b>Pendant</b> - Respecter 15 a 20 minutes <em>Equipe</em><br><span>Chronometre actif</span></li>
+<li><b>Pendant</b> - Montrer dashboards technique/executif <em>Kilyan</em><br><span>CAP-07 et CAP-08 visibles</span></li>
+<li><b>Pendant</b> - Montrer alerte patient 100120 <em>Kilyan</em><br><span>CAP-06 visible</span></li>
+<li><b>Pendant</b> - Montrer preflight/runbook <em>Mahamadou</em><br><span>preflight ou doc 25 visible</span></li>
+<li><b>Apres</b> - Exporter MP4 ou publier YouTube non repertorie <em>Equipe</em><br><span>Lien ou MP4 final</span></li>
+<li><b>Apres</b> - Coller le lien dans le fichier video <em>Equipe</em><br><span>TXT sans placeholder</span></li>
+<li><b>Apres</b> - Lancer check_video_ready.py <em>Equipe</em><br><span>video-readiness-report.txt OK</span></li>
+<li><b>Apres</b> - Lancer finalize_project.ps1 <em>Equipe</em><br><span>ZIP final reconstruit</span></li>
+  </ul>
+  <h2>Apres enregistrement</h2>
+  <ol>
+    <li>Publier en YouTube non repertorie ou deposer un MP4 final.</li>
+    <li>Coller le lien dans <code>PE_2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_video-lien.txt</code>.</li>
+    <li>Lancer <code>python .\tools\check_video_ready.py</code>.</li>
+    <li>Lancer <code>powershell -ExecutionPolicy Bypass -File .\tools\post_capture_finalize.ps1</code>.</li>
+  </ol>
+</aside>
+</main>
+</body>
+</html>

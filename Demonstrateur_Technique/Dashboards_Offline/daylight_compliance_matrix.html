@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Daylight / Cyber Trust - Matrice conformite</title>
+<style>
+:root { --ink:#182230; --muted:#667085; --line:#d0d5dd; --bg:#f6f7fb; --paper:#fff; --green:#067647; --red:#b42318; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Arial, sans-serif; background:var(--bg); color:var(--ink); }
+header { background:#172033; color:white; padding:26px 34px; border-bottom:4px solid #22a699; }
+header h1 { margin:0; font-size:28px; letter-spacing:0; }
+header p { margin:8px 0 0; color:#d7e3f4; max-width:1080px; line-height:1.45; }
+main { padding:24px 34px 42px; }
+.metrics { display:grid; grid-template-columns:repeat(4, minmax(140px, 1fr)); gap:12px; }
+.metric, section { background:var(--paper); border:1px solid var(--line); border-radius:8px; }
+.metric { padding:14px; min-height:88px; }
+.metric span { display:block; color:var(--muted); font-size:13px; }
+.metric strong { display:block; margin-top:10px; font-size:28px; }
+section { margin-top:16px; padding:18px; overflow-x:auto; }
+h2 { margin:0 0 12px; font-size:20px; }
+table { width:100%; border-collapse:collapse; font-size:14px; }
+th, td { border-bottom:1px solid #e4e7ec; padding:9px; text-align:left; vertical-align:top; }
+th { background:#eef2f7; color:#344054; }
+code { background:#f2f4f7; border:1px solid #e4e7ec; border-radius:5px; padding:2px 5px; }
+span { color:var(--muted); }
+.pill { display:inline-block; border-radius:999px; padding:4px 9px; font-size:12px; font-weight:700; }
+.ok { background:#ecfdf3; color:var(--green); }
+.warn { background:#fff1f0; color:var(--red); }
+@media (max-width: 980px) { .metrics { grid-template-columns:1fr; } main, header { padding-left:18px; padding-right:18px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Daylight / Cyber Trust - Matrice conformite cahier des charges</h1>
+  <p>Exigences issues du cadre pedagogique et du cahier des charges, reliees aux preuves actuelles du rendu. Genere le 2026-06-23 19:59:15.</p>
+</header>
+<main>
+  <div class="metrics">
+    <div class="metric"><span>Exigences</span><strong>17</strong></div>
+    <div class="metric"><span>OK</span><strong>16</strong></div>
+    <div class="metric"><span>A finaliser</span><strong>1</strong></div>
+    <div class="metric"><span>Blocages reels</span><strong>1</strong></div>
+  </div>
+  <section>
+    <h2>Lecture rapide</h2>
+    <p>Le point a finaliser reste la video reelle. CAP-25 prouve maintenant Docker/Wazuh OK ; les autres exigences ont une preuve documentaire ou technique dans le ZIP.</p>
+  </section>
+  <section>
+    <h2>Matrice</h2>
+    <table><thead><tr><th>ID</th><th>Source</th><th>Exigence</th><th>Owner</th><th>Preuve</th><th>Statut</th></tr></thead><tbody>
+    <tr><td><code>PED-01</code></td><td>Cadre pedagogique</td><td><b>Video 15-20 minutes presentant le MVP avec prise de parole individuelle</b><br><span>Script, teleprompteur, overlays et scene pack prets ; lien YouTube/MP4 reel encore absent.</span></td><td>Equipe</td><td><code>Dashboards_Offline/daylight_video_recording_pack.html; Config_Video/daylight_video_obs_scenes.csv; Video/PE_2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_video-lien.txt</code><br><span>partiel_2_3</span></td><td><span class="pill warn">A_FINALISER</span></td></tr><tr><td><code>PED-02</code></td><td>Cadre pedagogique</td><td><b>Rapport technique complet avec architecture, configuration, logs, roles, procedures et REX</b><br><span>Rapport groupe et dossier groupe consolide generes.</span></td><td>Equipe</td><td><code>Rendus_PDF/PE-2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_RapportGroupe.pdf; Rendus_PDF/PE-2526_M2CS_FOCSA_GUERNIOU_FELIX_DIACOUMBA_DossierGroupeComplet.pdf</code><br><span>preuves_presentes</span></td><td><span class="pill ok">OK</span></td></tr><tr><td><code>PED-03</code></td><td>Cadre pedagogique</td><td><b>Contribution individuelle de chaque membre</b><br><span>Un rendu individuel PDF par membre.</span></td><td>Equipe</td><td><code>Rendus_PDF/PE-2526_M2CS_YvanFOCSA.pdf; Rendus_PDF/PE-2526_M2CS_YoussefGUERNIOU.pdf; Rendus_PDF/PE-2526_M2CS_KilyanFELIX.pdf; Rendus_PDF/PE-2526_M2CS_MahamadouDIACOUMBA.pdf</code><br><span>preuves_presentes</span></td><td><span class="pill ok">OK</span></td></tr><tr><td><code>PED-04</code></td><td>Cadre pedagogique</td><td><b>Gestion de projet, planning, roles et methodologie</b><br><span>Backlog, roles et parcours de soutenance disponibles.</span></td><td>Kilyan FELIX</td><td><code>05_BACKLOG_PLANNING.md; 19_ROLES_CONTRIBUTIONS_PREUVES.md; 31_PACK_SOUTENANCE_JURY.md</code><br><span>preuves_presentes</span></td><td><span class="pill ok">OK</span></td></tr><tr><td><code>SOC-01</code></td><td>Cahier des charges</td><td><b>Analyse initiale du besoin client Daylight</b><br><span>Contexte client, risques et objectifs formalises.</span></td><td>Kilyan FELIX</td><td><code>14_SYNTHESE_EXECUTIVE_CLIENT.md; 01_RAPPORT_TECHNIQUE_GROUPE.md</code><br><span>preuves_presentes</span></td><td><span class="pill ok">OK</span></td></tr><tr><td><code>SOC-02</code></td><td>Cahier des charges</td><td><b>Document architecture technique</b><br><span>Architecture de demonstration et cible documentees.</span></td><td>Yvan FOCSA</td><td><code>01_RAPPORT_TECHNIQUE_GROUPE.md; Annexes_Captures/CAP-12_architecture-solution.png</code><br><span>preuves_presentes</span></td><td><span class="pill ok">OK</span></td></tr><tr><td><code>SOC-03</code></td><td>Cahier des charges</td><td><b>Demonstrateur operationnel</b><br><span>Lab Wazuh operationnel : Docker daemon OK, 3 conteneurs Wazuh UP, dashboard https://localhost en statut 200 via preflight CAP-25.</span></td><td>Youssef GUERNIOU / Mahamadou DIACOUMBA</td><td><code>Youssef GUERNIOU/setup-siem-lab.ps1; Preuves_SIEM_Youssef/Documentation_SIEM_Youssef_GUERNIOU.pdf; Rapports_Preflight/preflight-demo-report.txt; Annexes_Captures/CAP-25_preflight-demo-ok.png</code><br><span>partiel_2_4</span></td><td><span class="pill ok">OK</span></td></tr><tr><td><code>SOC-04</code></td><td>Cahier des charges</td><td><b>Collecte multi-source agents, syslog ou API</b><br><span>Endpoint, serveur, logs applicatifs, pfSense/syslog et logs demo couverts.</span></td><td>Youssef GUERNIOU</td><td><code>Youssef GUERNIOU/Documentation_SIEM_Youssef_GUERNIOU.pdf; Demo_Logs/pfsense.log; Demo_Logs/daylight_app.log; Config_PfSense/pfsense_syslog_wazuh.md</code><br><span>preuves_presentes</span></td><td><span class="pill ok">OK</span></td></tr><tr><td><code>SOC-05</code></td><td>Cahier des charges</td><td><b>SIEM open-source centralise</b><br><span>Wazuh retenu et documente.</span></td><td>Youssef GUERNIOU</td><td><code>Youssef GUERNIOU/Documentation_SIEM_Youssef_GUERNIOU.pdf; 02_GUIDE_DEPLOIEMENT_UTILISATION.md</code><br><span>preuves_presentes</span></td><td><span class="pill ok">OK</span></td></tr><tr><td><code>SOC-06</code></td><td>Cahier des charges</td><td><b>Regles de detection et alerting personnalisables</b><br><span>Regles 5712, 100xxx et 110xxx referencees et qualifiees.</span></td><td>Kilyan FELIX / Youssef GUERNIOU</td><td><code>Config_Wazuh/local_rules_daylight_pfsense.xml; Config_Wazuh/daylight_alert_qualification_matrix.csv; Annexes_Captures/CAP-03_alerte-5712-brute-force-ssh.png</code><br><span>preuves_presentes</span></td><td><span class="pill ok">OK</span></td></tr><tr><td><code>SOC-07</code></td><td>Cahier des charges</td><td><b>Dashboards lisibles et segmentes</b><br><span>Vue analyste et executive disponibles.</span></td><td>Kilyan FELIX</td><td><code>Dashboards_Offline/daylight_soc_dashboard.html; Annexes_Captures/CAP-07_dashboard-technique.png; Annexes_Captures/CAP-08_dashboard-executif.png</code><br><span>preuves_presentes</span></td><td><span class="pill ok">OK</span></td></tr><tr><td><code>SOC-08</code></td><td>Cahier des charges</td><td><b>Playbooks de reponse semi-automatises</b><br><span>Playbooks et REX documentes avec preuves visuelles.</span></td><td>Mahamadou DIACOUMBA</td><td><code>03_PLAYBOOKS_PROCEDURES_REX.md; Annexes_Captures/CAP-10_playbook-brute-force.png; Annexes_Captures/CAP-28_rex-incident-rempli.png</code><br><span>preuves_presentes</span></td><td><span class="pill ok">OK</span></td></tr><tr><td><code>SOC-09</code></td><td>Cahier des charges</td><td><b>Reporting simple et exportable</b><br><span>PDF, dashboards offline, manifeste et hash disponibles.</span></td><td>Kilyan FELIX</td><td><code>Rendus_PDF/; Dashboards_Offline/daylight_final_evidence_status.html; MANIFEST_DEPOT.md</code><br><span>preuves_presentes</span></td><td><span class="pill ok">OK</span></td></tr><tr><td><code>SOC-10</code></td><td>Cahier des charges</td><td><b>Interface web accessible et segmentee par roles supervision, analyste, admin</b><br><span>Preuves Wazuh et RBAC extraites du dossier SIEM.</span></td><td>Youssef GUERNIOU</td><td><code>Annexes_Captures/CAP-01_wazuh-dashboard-login.png; Annexes_Captures/CAP-09_rbac-analyste-lecture-seule.png</code><br><span>preuves_presentes</span></td><td><span class="pill ok">OK</span></td></tr><tr><td><code>SOC-11</code></td><td>Cahier des charges</td><td><b>Simulation d&#x27;un ou plusieurs sites clients avec VMs ou conteneurs</b><br><span>Inventaire et runbook VM/conteneurs fournis.</span></td><td>Mahamadou DIACOUMBA</td><td><code>Config_Lab/daylight_vm_inventory.csv; Config_Lab/daylight_lab_runbook.csv; 22_EXPLOITATION_VM_RUNBOOK_REX.md</code><br><span>preuves_presentes</span></td><td><span class="pill ok">OK</span></td></tr><tr><td><code>SOC-12</code></td><td>Cahier des charges</td><td><b>Generation de logs realistes attaque et safe</b><br><span>Logs pfSense, application, AD/fichiers, mail et endpoint generes.</span></td><td>Mahamadou DIACOUMBA</td><td><code>tools/generate_demo_logs.py; Demo_Logs/; tools/send_demo_logs_to_syslog.py; Annexes_Captures/CAP-27_rejeu-logs-dry-run.png</code><br><span>preuves_presentes</span></td><td><span class="pill ok">OK</span></td></tr><tr><td><code>SOC-13</code></td><td>Cahier des charges</td><td><b>Templates de deploiement client et solution industrialisable</b><br><span>Guide, imports pfSense, configs Wazuh et trajectoire cible documentes.</span></td><td>Yvan FOCSA</td><td><code>02_GUIDE_DEPLOIEMENT_UTILISATION.md; Config_PfSense/README_IMPORT_PFSENSE_DAYLIGHT.md; Config_PfSense/pfsense_demo_test_plan.csv</code><br><span>preuves_presentes</span></td><td><span class="pill ok">OK</span></td></tr>
+    </tbody></table>
+  </section>
+</main>
+</body>
+</html>

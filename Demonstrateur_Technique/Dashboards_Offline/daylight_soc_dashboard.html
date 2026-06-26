@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Daylight SOC Offline Dashboard</title>
+<style>
+:root { --ink:#172033; --muted:#667085; --line:#d0d5dd; --bg:#f7f9fc; --green:#1f7a4f; --red:#b42318; --orange:#c85120; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Arial, sans-serif; color:var(--ink); background:var(--bg); }
+header { background:#172033; color:#fff; padding:28px 42px; }
+header p { margin:6px 0 0; color:#d5e3ff; }
+main { padding:28px 42px 48px; }
+.grid { display:grid; grid-template-columns:repeat(4, 1fr); gap:16px; }
+.card, section { background:#fff; border:1px solid var(--line); border-radius:10px; padding:18px; }
+.card small { color:var(--muted); display:block; }
+.card strong { font-size:42px; display:block; margin-top:8px; }
+section { margin-top:18px; }
+h2 { margin:0 0 14px; font-size:22px; }
+table { width:100%; border-collapse:collapse; font-size:14px; }
+th, td { border-bottom:1px solid #e4e7ec; text-align:left; padding:9px; vertical-align:top; }
+th { background:#eef2f7; }
+.bar { display:flex; align-items:center; gap:12px; margin:10px 0; }
+.bar span { width:90px; }
+.bar strong { display:inline-block; height:22px; border-radius:5px; }
+.bar em { color:var(--muted); font-style:normal; }
+.pills { display:flex; flex-wrap:wrap; gap:10px; }
+.pill { border:1px solid var(--line); border-radius:999px; padding:8px 12px; background:#fff; }
+.pill span { margin-left:10px; color:var(--muted); }
+.note { color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<header>
+<h1>Daylight / Cyber Trust - Dashboard SOC offline</h1>
+<p>Vue demonstrable generee depuis les logs du projet. Elle aide la video si Wazuh n'est pas accessible, sans remplacer les captures Wazuh finales.</p>
+</header>
+<main>
+<div class="grid">
+<div class="card"><small>Total evenements</small><strong>16</strong></div>
+<div class="card"><small>Alertes critiques</small><strong>4</strong></div>
+<div class="card"><small>Donnees patients</small><strong>2</strong></div>
+<div class="card"><small>Blocages reseau</small><strong>2</strong></div>
+</div>
+<section><h2>Repartition par severite</h2><div class="bar"><span>High</span><strong style="width:120px;background:#c85120"></strong><em>5</em></div>
+<div class="bar"><span>Medium</span><strong style="width:96px;background:#b7791f"></strong><em>4</em></div>
+<div class="bar"><span>Critical</span><strong style="width:96px;background:#b42318"></strong><em>4</em></div>
+<div class="bar"><span>Low</span><strong style="width:72px;background:#475467"></strong><em>3</em></div></section>
+<section><h2>Top regles detectees</h2><div class="pills"><div class="pill"><b>100110</b><span>2</span></div>
+<div class="pill"><b>100120</b><span>2</span></div>
+<div class="pill"><b>100150</b><span>2</span></div>
+<div class="pill"><b>100140</b><span>2</span></div>
+<div class="pill"><b>110010</b><span>1</span></div>
+<div class="pill"><b>110020</b><span>1</span></div>
+<div class="pill"><b>110000</b><span>1</span></div>
+<div class="pill"><b>110060</b><span>1</span></div>
+<div class="pill"><b>110050</b><span>1</span></div>
+<div class="pill"><b>100125</b><span>1</span></div>
+<div class="pill"><b>000000</b><span>1</span></div>
+<div class="pill"><b>100130</b><span>1</span></div></div></section>
+<section><h2>Sources collectees</h2><div class="pills"><div class="pill"><b>Firewall</b><span>5</span></div>
+<div class="pill"><b>Application</b><span>3</span></div>
+<div class="pill"><b>AD</b><span>2</span></div>
+<div class="pill"><b>Mail</b><span>2</span></div>
+<div class="pill"><b>Endpoint</b><span>2</span></div>
+<div class="pill"><b>Autre</b><span>1</span></div>
+<div class="pill"><b>Files</b><span>1</span></div></div></section>
+<section><h2>Timeline des alertes</h2><table><thead><tr><th>Heure</th><th>Regle</th><th>Severite</th><th>Source</th><th>Scenario</th><th>Fichier</th></tr></thead><tbody><tr><td>2026-06-23T09:14:02+02:00</td><td>110010</td><td>Medium</td><td>Firewall</td><td>Scan WAN bloque</td><td>pfsense.log</td></tr>
+<tr><td>2026-06-23T09:15:17+02:00</td><td>110020</td><td>Critical</td><td>Firewall</td><td>Inter-VLAN vers MGMT bloque</td><td>pfsense.log</td></tr>
+<tr><td>2026-06-23T09:16:41+02:00</td><td>110000</td><td>Low</td><td>Firewall</td><td>Flux HTTPS DMZ autorise</td><td>pfsense.log</td></tr>
+<tr><td>2026-06-23T09:18:09+02:00</td><td>110060</td><td>Low</td><td>Firewall</td><td>Connexion VPN admin MFA</td><td>pfsense.log</td></tr>
+<tr><td>2026-06-23T09:20:32+02:00</td><td>110050</td><td>Critical</td><td>Firewall</td><td>Flux sortant volumineux</td><td>pfsense.log</td></tr>
+<tr><td>2026-06-23T09:22:05+02:00</td><td>100110</td><td>High</td><td>Application</td><td>Brute force applicatif Daylight</td><td>daylight_app.log</td></tr>
+<tr><td>2026-06-23T09:24:11+02:00</td><td>100120</td><td>Critical</td><td>Application</td><td>Acces anormal dossier patient</td><td>daylight_app.log</td></tr>
+<tr><td>2026-06-23T09:25:42+02:00</td><td>100125</td><td>Medium</td><td>Application</td><td>Export rendez-vous a surveiller</td><td>daylight_app.log</td></tr>
+<tr><td>2026-06-23T09:28:03+02:00</td><td>000000</td><td>Low</td><td>Autre</td><td>Evenement collecte</td><td>daylight_app.log</td></tr>
+<tr><td>2026-06-23T09:31:44+02:00</td><td>100130</td><td>Critical</td><td>AD</td><td>Modification groupe privilegie</td><td>ad_files.log</td></tr>
+<tr><td>2026-06-23T09:33:18+02:00</td><td>100120</td><td>High</td><td>Files</td><td>Acces partage patient refuse</td><td>ad_files.log</td></tr>
+<tr><td>2026-06-23T09:35:59+02:00</td><td>100110</td><td>High</td><td>AD</td><td>Password spray</td><td>ad_files.log</td></tr>
+<tr><td>2026-06-23T09:40:27+02:00</td><td>100150</td><td>High</td><td>Mail</td><td>Phishing signale</td><td>mail_phishing.log</td></tr>
+<tr><td>2026-06-23T09:41:52+02:00</td><td>100150</td><td>Medium</td><td>Mail</td><td>Clic URL bloque</td><td>mail_phishing.log</td></tr>
+<tr><td>2026-06-23T09:45:01+02:00</td><td>100140</td><td>High</td><td>Endpoint</td><td>USB non autorise</td><td>endpoint_usb.log</td></tr>
+<tr><td>2026-06-23T09:45:33+02:00</td><td>100140</td><td>Medium</td><td>Endpoint</td><td>Execution binaire non signe</td><td>endpoint_usb.log</td></tr></tbody></table></section>
+<section><h2>Qualification SOC</h2><table><thead><tr><th>Regle</th><th>Scenario</th><th>Severite</th><th>SLA</th><th>Action immediate</th></tr></thead><tbody><tr><td>100110</td><td>Brute force applicatif Daylight</td><td>High</td><td>30 min</td><td>Lock account or rate-limit source if malicious</td></tr>
+<tr><td>100120</td><td>Acces anormal dossier patient</td><td>Critical</td><td>15 min</td><td>Confirm legitimacy; suspend session/account if suspicious</td></tr>
+<tr><td>100130</td><td>Modification groupe privilegie</td><td>Critical</td><td>15 min</td><td>Rollback unauthorized change; preserve evidence</td></tr>
+<tr><td>100140</td><td>USB non autorise</td><td>Medium/High</td><td>4 h</td><td>Ask support to remove device; scan endpoint</td></tr>
+<tr><td>100150</td><td>Phishing signale</td><td>High</td><td>30 min</td><td>Block IOC; quarantine email; reset password if clicked</td></tr>
+<tr><td>110010</td><td>Scan WAN bloque</td><td>Medium</td><td>4 h</td><td>Monitor and block if persistent</td></tr>
+<tr><td>110020</td><td>Inter-VLAN vers MGMT/SERVERS</td><td>Critical</td><td>15 min</td><td>Confirm pfSense block; isolate source host if suspicious</td></tr>
+<tr><td>110050</td><td>Flux sortant volumineux</td><td>Critical</td><td>15 min</td><td>Block destination if suspicious; investigate exfiltration</td></tr></tbody></table></section>
+<p class="note">Sources : Demo_Logs/*.log, config/wazuh/daylight_alert_qualification_matrix.csv, config/wazuh/daylight_dashboard_queries.csv.</p>
+</main>
+</body>
+</html>

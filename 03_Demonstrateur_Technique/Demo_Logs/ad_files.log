@@ -1,3 +1,0 @@
-2026-06-23T09:31:44+02:00 daylight-ad-01 DAYLIGHT_AD event=privileged_group_change actor=svc-temp target=Domain Admins action=add_member member=helpdesk.demo risk=critical
-2026-06-23T09:33:18+02:00 daylight-files-01 DAYLIGHT_FILES event=patient_share_access user=stagiaire.demo path=\\daylight-files-01\patients\lyon\2026 result=denied risk=high
-2026-06-23T09:35:59+02:00 daylight-ad-01 DAYLIGHT_AD event=password_spray source=10.10.10.54 failures=18 window=5m risk=high

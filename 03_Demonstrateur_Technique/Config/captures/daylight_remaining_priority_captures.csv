@@ -1,2 +1,0 @@
-﻿id,filename,responsible,where_to_click,exact_proof,command_or_query
-CAP-25,CAP-25_preflight-demo-ok.png,Mahamadou,"PowerShell project root","preflight proves Docker daemon and https://localhost OK","python .\tools\render_preflight_evidence.py"
